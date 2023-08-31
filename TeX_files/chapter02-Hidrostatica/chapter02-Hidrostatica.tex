@@ -1,0 +1,356 @@
+\chapter{Hidrostática}
+
+\section{Ecuación fundamental de la fluidostática}
+
+\textbf{Fluido en reposo}: No hay esfuerzos tangenciales, y la única
+fuerza superficial es la presión.
+
+Equilibrio estático: 
+
+\begin{equation}
+\vec{f}_{m}-\vec{\nabla}p=0
+\end{equation}
+
+
+Según el calculo diferencial, 
+\[
+\vec{\nabla}\times\left(\vec{\nabla}\phi\right)=0\quad\forall\phi\text{ escalar}
+\]
+
+\[
+\Rightarrow\vec{\nabla}\times\vec{f_{m}}=0.
+\]
+ $\Rightarrow\vec{f}_{m}$ ha de ser un \emph{campo conservativo}.
+
+\[
+\dif p=\vec{f}_{m}\cdot\dif\vec{r}
+\]
+ Integrando sobre un determinado camino, 
+\[
+p\left(\vec{r}\right)=p\left(\vec{r}_{0}\right)+\int_{\vec{r}_{0}}^{\vec{r}}\vec{f}_{m}\cdot\dif\vec{r}
+\]
+ Nos permite calcular la presión en cualquier punto $\vec{r}$ conociendo
+el valor en un punto de referencia $\vec{r}_{0}$ y el campo de fuerzas
+$\vec{f}_{m}$.
+
+Si $\vec{f}_{m}$ es conservativo 
+\[
+\vec{f}_{m}=-\rho\vec{\nabla}U
+\]
+ y, entonces, 
+\[
+\vec{\nabla}p=-\rho\vec{\nabla}U
+\]
+
+Si $\rho$ varia de forma arbitraria, no existen soluciones para la
+ecuación , y no es posible llegar al equilibrio, $\rightarrow$ \textcolor{blue}{corrientes
+convectivas}
+
+La ecuación sólo admite soluciones cuando $\rho$ es únicamente función
+de la presión, o bien es constante (fluido incompresible). 
+\[
+p+\rho U=cte
+\]
+
+$\rightarrow$ \textcolor{blue}{Principio de Pascal}
+
+Hidrostática en el campo de la gravedad
+
+\[
+\vec{f}_{m}=\rho\vec{g},
+\]
+ con 
+\[
+\vec{g}=-g\vec{k}\qquad\text{donde }g=9.81\,\frac{\textrm{m}}{\textrm{s}^{2}}
+\]
+ y 
+\[
+U=gz
+\]
+
+
+
+Superficies isobáricas (superficies de igual presión), incluida la
+superficie libre de los líquidos, horizontales. %
+
+\[
+\vec{\nabla}p=-\rho g\vec{k}\Rightarrow\left\{ \begin{aligned}\dparc{p}{x} & =0\\
+\dparc{p}{y} & =0\\
+\dparc{p}{z} & =-\rho g
+\end{aligned}
+\right.
+\]
+%
+
+La presión es únicamente función de la coordenada $z$.
+
+\[
+\deriv{p}{z}=-\rho\,g\Rightarrow\,p_{2}-p_{1}
+\]
+
+\[
+=-\int_{z_{1}}^{z_{2}}\rho\,g\,\dif z
+\]
+%
+
+\subsection*{Actividad 1:}
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\begin{itemize}
+\item ¿A cuántos metros de columna de agua corresponden la presión atmosférica?
+\item Si el aire fuese incompresible, con la densidad que tiene a nivel
+del mar, ¿cuál debería ser la altura de la atmósfera para tener la
+misma presión?
+\end{itemize}
+%
+\end{minipage}
+
+\section{Presión atmosférica}
+
+La presión atmosférica disminuye con la altura. Dado que el aire es
+un gas, su densidad disminuye, en general, cuando disminuye la presión,
+por lo que también es menor cuando aumentamos la altura.
+
+Necesitamos información sobre la variación de $\rho$ con $z$, o
+bien con $p$.
+
+Opción: aire gas ideal 
+\[
+\rho=\frac{pM}{RT}\quad\textnormal{con}\,M=28.9\,\textnormal{g/mol}.
+\]
+ 
+\begin{equation}
+\Rightarrow\,\frac{\dif p}{p}=-\frac{Mg}{RT}\dif z\label{eq:general}
+\end{equation}
+
+
+
+Sin considerar la variación de $g$ con la altura: 
+\begin{itemize}
+\item \textcolor{blue}{Atmósfera isoterma:} 
+\[
+\int_{p_{0}}^{p}\frac{\dif p}{p}=-\int_{0}^{z}\frac{Mg}{RT}\dif z
+\]
+ 
+\[
+\ln\frac{p}{p_{0}}=-\frac{Mg}{RT}z=-\frac{\rho_{0}g}{p_{0}}z
+\]
+ 
+\begin{equation}
+\Rightarrow\boxed{p=p_{0}\exp\left(-\frac{\rho_{0}g}{p_{0}}z\right)=p_{0}\exp\left(-\frac{z}{\alpha}\right)}\label{eq:isotermica}
+\end{equation}
+ donde 
+\[
+\alpha=\frac{p_{0}}{\rho_{0}g}
+\]
+\end{itemize}
+Valores normales: 
+\[
+\left.\begin{aligned}\rho_{0} & =1.292\,\text{Kg}/\text{m}^{3}\\
+g & =9.80665\,\text{m}/\text{s}^{2}\\
+p_{0} & =760\,\text{mmHg}=101328\,\text{Pa}
+\end{aligned}
+\right\} \rightarrow\alpha=7997.35\,\text{m}\approx8000\,\text{m}
+\]
+
+
+
+\begin{itemize}
+\item \textcolor{blue}{Atmósfera adiabática:} 
+\[
+\frac{p}{\rho^{\gamma}}=\frac{p_{0}}{\rho_{0}^{\gamma}}\qquad\text{con}\qquad\gamma=\frac{c_{p}}{c_{v}}=1.4\qquad\text{para aire}
+\]
+\end{itemize}
+\[
+\dif p=-g\rho\dif z=-\rho_{0}\left(\frac{p}{p_{0}}\right)^{\frac{1}{\gamma}}g\dif z
+\]
+ 
+\[
+\Rightarrow\frac{\dif p}{p^{\frac{1}{\gamma}}}=-\frac{\rho_{0}}{p_{0}^{\frac{1}{\gamma}}}g\dif z
+\]
+
+\[
+\int_{p_{0}}^{p}\frac{\dif p}{p^{\frac{1}{\gamma}}}=\int_{0}^{z}-\frac{\rho_{0}}{p_{0}^{\frac{1}{\gamma}}}g\dif z=-\frac{\rho_{0}}{p_{0}^{\frac{1}{\gamma}}}gz
+\]
+
+
+\[
+\Rightarrow\frac{1}{-\frac{1}{\gamma}+1}\left.p^{-\frac{1}{\gamma}+1}\right]_{p_{0}}^{p}=-\frac{\rho_{0}}{p_{0}^{\frac{1}{\gamma}}}gz
+\]
+
+\[
+\Rightarrow\frac{\gamma}{\gamma-1}\left[p^{\frac{\gamma-1}{\gamma}}-p_{0}^{\frac{\gamma-1}{\gamma}}\right]=-\frac{\rho_{0}}{p_{0}^{\frac{1}{\gamma}}}gz
+\]
+
+\[
+\Rightarrow p^{\frac{\gamma-1}{\gamma}}-p_{0}^{\frac{\gamma-1}{\gamma}}=\frac{1-\gamma}{\gamma}\frac{\rho_{0}}{p_{0}^{\frac{1}{\gamma}}}gz
+\]
+
+\begin{equation}
+\Rightarrow\boxed{\left(\frac{p}{p_{0}}\right)^{\frac{\gamma-1}{\gamma}}=1+\frac{1-\gamma}{\gamma}\frac{z}{\alpha}}\label{eq:adiabatica}
+\end{equation}
+
+
+\begin{itemize}
+\item \textcolor{blue}{Atmósfera estándar:}
+\end{itemize}
+En realidad, la temperatura media de la atmósfera disminuye de forma
+casi lineal con la altura 
+\[
+T=T_{0}-Bz
+\]
+ hasta una altura aproximada de 11000 metros (región conocida como
+\textit{troposfera}). Los valores de $T_{0}$ (la temperatura a nivel
+del mar) y $B$ (\textit{gradiente térmico}) varían no sólo según
+el día sino también a lo largo del mismo día. Los valores estándar
+usados por convenio son 
+\begin{eqnarray*}
+T_{0} & = & 15^{\circ}C=288.16\textnormal{K}\\
+B & = & 0.0065\textnormal{K/m}
+\end{eqnarray*}
+
+
+
+\subsection*{Actividad 2:}
+Integrar la ecuación (\ref{eq:general}) con esta distribución de
+temperatura para obtener 
+\begin{equation}
+p=p_{0}\left(1-\frac{Bz}{T_{0}}\right)^{\frac{Mg}{RB}}
+\end{equation}
+
+El valor del exponente para aire es 
+\[
+\frac{Mg}{RB}=5.26
+\]
+
+Después de la troposfera, la temperatura se mantiene constante hasta
+unos 20000 metros para empezar a aumentar de forma gradual.
+
+Hay que tener siempre en cuenta que esta atmósfera estándar es un
+valor promediado. 
+
+\section{Fuerza de un fluido estático sobre una superficie}
+
+\subsection{Cálculo de la fuerza}
+
+
+\begin{center}
+\resizebox{0.8\textwidth}{!}{\input{TeX_files/chapter02-Hidrostatica/superficie.pdftex_t}}
+\par\end{center}
+
+
+\[
+F=\int_{S}\dif F=\int_{S}(p_{0}+\rho\,g\,h)\dif S==\int_{S}(p_{0}+\rho\,g\,y\,\sin\theta)\dif S
+\]
+
+\[
+\Rightarrow\;F=p_{0}\,S+\rho\,g\,\sin\theta\int_{S}y\dif S
+\]
+
+\begin{description}
+\item [{$\int_{S}y\dif S$}] : momento de primer orden de la superficie
+$S$ respecto el eje $x$ $\rightarrow$ coordenada $y_{C}$ del centroide
+$C$ de la forma
+\end{description}
+\[
+y_{C}\,S=\int_{S}y\dif S\,\Rightarrow\;F=(p_{0}+\rho\,g\,y_{C}\,\sin\theta)S=(p_{0}+\rho\,g\,h_{C})S
+\]
+
+\fbox{%
+\noindent\parbox[c]{1\textwidth}{%
+ La fuerza ejercida sobre una superficie totalmente sumergida se puede
+calcular \textbf{imaginando} que la presión que actúa es constante
+en toda la superficie e igual al valor en el centroide. %
+}}
+
+
+\subsection{Coordenadas del punto de aplicación}
+
+
+Momento de la fuerza $\vec{F}$ respecto el eje $x$: 
+\[
+y_{cp}F=\int_{S}y\dif F=\int_{S}y(p_{0}+\rho\,g\,y\,\sin\theta)\dif S=p_{0}\int_{S}y\dif S+\rho\,g\,\sin\theta\int_{S}y^{2}\dif S
+\]
+ 
+\[
+\Rightarrow y_{cp}F=\int_{S}y\dif F=p_{0}\,y_{C}\,S+\rho\,g\,\sin\theta I_{xx}
+\]
+ donde $I_{xx}$ es el momento de segundo orden de la superficie $S$
+respecto el eje $x$.
+
+Nuevo sistema de coordenadas $(\xi,\eta,\zeta)$, paralelo a $(x,y,z)$
+pero con origen en el centroide $C$. 
+\[
+I_{xx}=I_{\xi\xi}+y_{C}^{2}\,S\qquad\text{(T. de Steiner)}
+\]
+
+\[
+\Rightarrow y_{cp}=y_{C}+\frac{I_{\xi\xi}}{\left(y_{C}+\frac{p_{0}}{\rho\,g\,\sin\theta}\right)S}
+\]
+
+
+Para $x_{cp}$: 
+\[
+\int_{S}x\dif F=\int_{S}x(p_{0}+\rho\,g\,y\,\sin\theta)\dif S=p_{0}\int_{S}x\dif S+\rho\,g\,\sin\theta\int_{S}xy\dif S
+\]
+ 
+\[
+\Rightarrow\int_{S}x\dif F=p_{0}\,x_{C}\,S+\rho\,g\,\sin\theta I_{xy}
+\]
+ 
+\[
+I_{xy}=I_{\xi\eta}+x_{C}\,y_{C}\,S\qquad\text{(T. de Steiner)}
+\]
+ 
+\[
+\Rightarrow x_{cp}=x_{C}+\frac{I_{\xi\eta}}{\left(y_{C}+\frac{p_{0}}{\rho\,g\,\sin\theta}\right)S}
+\]
+
+
+
+Normalmente, $p_{0}$ (en general, la presión atmosférica) actúa por
+igual en las dos caras de la superficie, 
+\begin{align*}
+F & =\rho\,g\,h_{C}\,S\\
+x_{cp} & =x_{C}+\frac{I_{\xi\eta}}{y_{C}\,S}\\
+y_{cp} & =y_{C}+\frac{I_{\xi\xi}}{y_{C}\,S}
+\end{align*}
+
+Dado que $I_{\xi\xi}$ es, por definición, una cantidad siempre positiva,
+el centro de presiones se encuentra siempre por debajo del centroide.
+
+
+\subsection{Fuerza sobre una superficie curva totalmente sumergida}
+
+
+\begin{center}
+\resizebox{!}{5cm}{\input{TeX_files/chapter02-Hidrostatica/superficie_curva.pdftex_t}}
+\par\end{center}
+
+ 
+\[
+\begin{aligned}F_{x} & =-\int_{S}(p_{0}+\rho\,g\,h)\dif S_{x}\\
+F_{y} & =-\int_{S}(p_{0}+\rho\,g\,h)\dif S_{y}
+\end{aligned}
+\]
+ 
+
+Si proyectamos la superficie $S$ sobre los planos $x=0$ y $y=0$,
+obtenemos $S_{x}$ y $S_{y}$, y podemos calcular $F_{x}$ y $F_{y}$,
+así como sus puntos de aplicación.
+
+$F_{z}$ resulta ser igual al peso total de fluido que se encuentra
+\emph{por encima} de la superficie curva. La linea de acción de $F_{z}$
+pasa por el centro de gravedad de la columna de fluido que hay sobre
+la superficie.
+
+Las expresiones anteriores son válidas únicamente para fluidos con
+densidad constante. Si el fluido está estratificado, de forma que
+hay un \textit{gradiente de densidad}, positivo hacia la dirección
+vertical negativa, los cálculos se complican.
+
+
+\subsection*{Actividad 3:}
+Calcula la fuerza y el momento que hace un embalse de agua de 50
+metros de profundidad y 200 metros de ancho sobre la pared, vertical,
+de la presa.
+

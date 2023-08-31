@@ -1,0 +1,28 @@
+﻿\tikzstyle{isometric}=[x={(0.710cm,-0.410cm)},y={(0cm,0.820cm)},z={(-0.710cm,-0.410cm)}]
+\tikzstyle{dimetric} =[x={(0.935cm,-0.118cm)},y={(0cm,0.943cm)},z={(-0.354cm,-0.312cm)}]
+\tikzstyle{dimetric2}=[x={(0.935cm,-0.118cm)},z={(0cm,0.943cm)},y={(+0.354cm,+0.312cm)}]
+\tikzstyle{trimetric}=[x={(-0.926cm,0.207cm)},y={(0cm,0.837cm)},z={(0.378cm,0.507cm)}]
+
+\begin{tikzpicture}[trimetric]
+	\coordinate (O) at (0,0,0);
+	\draw[-stealth] (0,0,0) -- (6,0,0) node[above]{$x$};
+	\draw[-stealth] (0,0,0) -- (0,6,0) node[above]{$y$};
+	\draw[-stealth] (0,0,0) -- (0,0,6) node[above]{$z$};
+	\draw[fill=gray!30] (0,0,0) -- (0,4,0) -- (0,4,4) -- (0,0,4)-- cycle;	
+	\draw (0,0,0) -- (4,0,0) -- (4,4,0) -- (0,4,0)-- cycle;
+	\draw (0,0,0) -- (0,0,4) -- (4,0,4) -- (4,0,0)-- cycle;
+	\draw[fill=gray!30] (4,0,0) -- (4,4,0) -- (4,4,4) -- (4,0,4)-- cycle;	
+	\draw (0,0,4) -- (4,0,4) -- (4,4,4) -- (0,4,4)-- cycle;
+	\draw (0,4,0) -- (0,4,4) -- (4,4,4) -- (4,4,0)-- cycle;
+%
+	\draw[-stealth,thick] (0,2,2) -- (-1,2,2) node[above ]{$\sigma_x$};
+	\draw[-stealth,thick] (0,2,2) -- (0,1,2) node[right]{$\tau_{xy}$};
+	\draw[-stealth,thick] (0,2,2) -- (0,2,1) node[above=2mm]{$\tau_{xz}$};
+%
+	\draw[-stealth,thick] (4,2,2) -- (5,2,2) node[left=2mm]
+					{$\sigma_x+\frac{\partial \sigma_x}{x} \textrm{d}x$};
+	\draw[-stealth,thick] (4,2,2) -- (4,3,2) node[above left]
+					{$\tau_{xy}+\frac{\partial \tau_{xy}}{x} \textrm{d}x$};
+	\draw[-stealth,thick] (4,2,2) -- (4,2,3) node[right]
+					{$\tau_{xz}+\frac{\partial \tau_{xz}}{x} \textrm{d}x$};
+\end{tikzpicture}
