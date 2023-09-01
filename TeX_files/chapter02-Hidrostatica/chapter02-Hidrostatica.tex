@@ -350,7 +350,133 @@ vertical negativa, los cálculos se complican.
 
 
 \subsection*{Actividad 3:}
-Calcula la fuerza y el momento que hace un embalse de agua de 50
+Calcula la fuerza, y su punto de aplicación, que hace un embalse de agua de 50
 metros de profundidad y 200 metros de ancho sobre la pared, vertical,
 de la presa.
 
+
+\section{Principio de Arquímedes}
+
+\fbox{%
+	\parbox{1\textwidth}{%
+%\begin{quotation}
+	\emph{Todo cuerpo sumergido, completa o parcialmente,
+		en un fluido experimenta
+		un empuje dirigido verticalmente hacia arriba, con magnitud igual al peso del
+		fluido desalojado y cuya  linea de acci\'on pasa por el centro de gravedad
+		del fluido desalojado}
+%\end{quotation} %
+}}
+
+
+\begin{minipage}{0.4\textwidth}
+	\begin{center}
+		\includegraphics[width=\textwidth]{TeX_files/chapter02-Hidrostatica/arquimedes}
+	\end{center}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+	Las lineas de acci\'on de las fuerzas de empuje y el peso no
+	tienen porqu\'e coincidir, y, en este caso, se producen pares de fuerzas.
+	\begin{description}
+		\item[\textcolor{blue}{carena}] volumen del fluido desalojado
+		\item[\textcolor{blue}{centro
+			de carena} o \textcolor{blue}{centro de empuje}] centro de gravedad del fluido desalojado
+	\end{description}
+\end{minipage}
+
+
+	El principio de Arquímedes no es, en realidad, un principio. Se puede deducir en cualquier caso simplemente calculando la integral de la presión sobre la superficie que limita el cuerpo.
+	
+	También se puede obervar que es la resta del peso de la columna de fluido sobre la superficie superior y sobre la superficie inferior.
+	
+\begin{center}
+	\includegraphics[width=0.5\columnwidth]{TeX_files/chapter02-Hidrostatica/arquimedes2}
+\end{center}
+\section{Segunda ley de Arquímedes}
+
+
+	La segunda ley de Arqu\'imedes dice que \emph{un cuerpo que flota desaloja su propio peso de fluido}. 
+	
+	Se puede comprender observando que en la figura, el recipiente con solo fluido y el que tiene fluido y cuerpo flotando, \textbf{deben pesar lo mismo}. Pregunta: ?`C\'omo sabemos que pesan lo mismo?
+
+
+	\begin{center}
+		\includegraphics[width=0.75\columnwidth]{TeX_files/chapter02-Hidrostatica/arquimedes1}
+	\end{center}
+
+
+\section{Estabilidad}
+
+Para un cuerpo sumergido, el centro de gravedad puede ser diferente del centro de empuje, y esto produce un momento que puede ser restaurador (equilibrio estable) o de vuelco (equilibrio inestable)
+
+\begin{center}
+	\includegraphics[width=0.7\linewidth]{TeX_files/chapter02-Hidrostatica/estabilidad1}
+\end{center}
+
+%\begin{center}
+%	\includegraphics[width=0.7\columnwidth]{estab1.png}
+%	% estab1.png: 996x491 pixel, 72dpi, 35.14x17.32 cm, bb=
+%\end{center}
+
+
+Para un cuerpo flotante, es m\'as complicado, ya que la posici\'on del centro de empuje var\'ia
+
+
+Equilibrio estable 
+\begin{center}
+	\includegraphics[width=0.7\linewidth]{TeX_files/chapter02-Hidrostatica/estabilidad2}
+\end{center}
+
+
+
+Equilibrio inestable
+\begin{center}
+	\includegraphics[width=0.7\linewidth]{TeX_files/chapter02-Hidrostatica/estabilidad3}
+\end{center}
+
+
+Pasos para calcular la estabilidad de un cuerpo flotante, consideremos un cuerpo sim\'etrico:
+
+1.- Se calcula posici\'on de equilibrio inicial, mediante las fuerzas $\vec F_E$ y $\vec W$, y sus puntos de aplicaci\'on, $E$ y $G$. Como el cuerpo estan en equilibrio, estas fuerza se alinean con el eje de simetria.
+
+2.- Se realiza una peque\~na perturbaci\'on $\Delta \theta$. El centro de empuje se desplaza a una nueva posici\'on $E'$. La vertical sobre $E'$ corta el eje de simetria en un punto $M$, denominado \textbf{metacentro}. Si el \'angulo $\Delta \theta$ es peque\~no, el metacentro no depender\'a de \'el.
+
+3.- Se calcula la \textbf{altura metac\'entrica}, que es la distancia de $M$ a $G$. Si $M$ est\'a por encima de $G$, la altura metac\'entrica  es positiva, y la posici\'on es \emph{estable}. Si est\'a por debajo, la altura metac\'entrica es negativa, y la posici\'on es \emph{inestable}.
+
+La altua metac\'entrica es una caracter\'istica de la secci\'on transversal del cuerpo y su distribuci\'on de masa.
+
+\begin{center}
+	\includegraphics[width=0.7\linewidth]{TeX_files/chapter02-Hidrostatica/estabilidad4}
+\end{center}
+
+\begin{center}
+	\includegraphics[width=0.7\linewidth]{TeX_files/chapter02-Hidrostatica/estabilidad5}
+\end{center}
+
+
+
+
+	La posici\'on del nuevo centro de empuje se calcula con la estimación del centro de masas:
+
+\begin{align*}
+	\overline{x}V_{aObdea} &= \int_{Obd}x \dif V - \int_{cOa} x \dif V
+\\
+	&= \int_{Obd} x L \dif A - \int_{cOa} x L \dif A 
+\\
+	&= \int_{Obd} x L (x\tan \theta \dif x) - \int_{cOa} x L  (-x\tan \theta \dif x)
+\\
+	&= \tan \theta \int x^2 2 L \dif x = \tan \theta \int x^2 \dif A 
+	\\
+	&= \tan \theta I_0
+\end{align*}
+
+
+La altura metac\'entrica es
+
+\begin{equation}
+	\overline{MG} = \overline{ME}-\overline{GE}= \frac{\overline{x}}{\tan \theta} - \overline{GE} 
+= \frac{I_0}{V_{\textrm{sumergido}}} - \overline{GE} = \frac{\rho g I_0}{W} - \overline{GE}
+\end{equation}
+
+Si $\overline{MG}$ es positiva, el equilibrio es estable (para peque\~nas perturbaciones). Si 
+$\overline{GE}$ es negativa, el equilibrio es estable siempre

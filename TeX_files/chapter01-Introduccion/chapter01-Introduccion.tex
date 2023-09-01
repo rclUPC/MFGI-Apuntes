@@ -55,7 +55,7 @@ $$
 V_m = \frac{4}{3} \pi R^3 \Rightarrow R \approx 1.9 \cdot 10^{-10} \, \textrm{m}
 $$
 
-Para los gases, la distancia es mucho mayor (Ejercicio: calcular $d_0$ para el aire).
+Para los gases, la distancia es mucho mayor (Ejercicio: calcular $d$ para el aire).
 
 As\'{\i}, las fuerzas entre las mol\'eculas de un gas son atractivas y muy d\'ebiles. Estas mol\'eculas
 flotan por el espacio sin pr\'acticamente ninguna interacci\'on excepto las colisiones.
@@ -143,10 +143,12 @@ Batchelor \cite{Bat} lo describe muy bien con una figura parecida a esta:
 			\includegraphics[scale=1,angle=270]{TeX_files/chapter01-Introduccion/u_z.pdf}
 		\end{center}
 		
-		se produce un intercambio de cantidad de movimiento entre capas que tiende a frenar las m\'as r\'apidas y acelerar las m\'as lentas. Es decir, se produce un \textit{esfuerzo tangencial}. En muchos casos, \'este esfuerzo es proporcional al gradiente de velocidades, y a la constante de proporcionalidad se le denomina \textit{\textcolor{red}{viscosidad din\'amica}}, $\mu$.
-		$$
-		\tau = \mu \dparc{u}{z} \qquad ; \qquad \left[\mu\right] = \textrm{Pa}\cdot\textrm{s}
-		$$
+		se produce un intercambio de cantidad de movimiento entre capas que tiende a frenar las m\'as r\'apidas y acelerar las m\'as lentas. Es decir, se produce un \textit{esfuerzo tangencial}. En muchos casos, \'este esfuerzo es proporcional al gradiente de velocidades, y a la constante de proporcionalidad se le denomina \textit{\textcolor{red}{viscosidad din\'amica}}, $\mu$. Ésta es la conocida como \textbf{Ley de Newton de la viscosidad}.
+		
+		\begin{equation}
+			\tau = \mu \dparc{u}{z} \qquad ; \qquad \left[\mu\right] = \textrm{Pa}\cdot\textrm{s}
+		\end{equation}
+		
 		
 		La \textit{\textcolor{red}{viscosidad cinem\'atica}} se define como
 		$$
@@ -238,17 +240,17 @@ Definici\'on de tensi\'on o esfuerzo:
 \end{center}
 
 Sobre el volumen $\text{d} V$ act\'ua una fuerza, debida a los esfuerzos superficiales cuya componente $x$ es
-\begin{multline*}
+\begin{multline}
 	\dif F_x = -\sigma_x  \dif y \dif z + \left(\sigma_x + \dparc{\sigma_x}{x} \dif x\right) \dif y \dif z - \tau_{yx} \dif x \dif z + \left(\tau_{yx} + \dparc{\tau_{yx}}{y}\right) \dif x \dif z \\
 	- \tau_{zx} \dif x \dif y + \left(\tau_{zx} + \dparc{\tau_{zx}}{z}\right) \dif x \dif y
 	= \dparc{\sigma_x}{x} \dif x \dif y \dif z + \dparc{\tau_{yx}}{y} \dif x \dif y \dif z + \dparc{\tau_{zx}}{z}
 	\dif x \dif y \dif z
-\end{multline*}
+\end{multline}
 De la misma forma:
-\begin{eqnarray*}
+\begin{eqnarray}
 	\dif F_y = \dparc{\sigma_y}{y} \dif x \dif y \dif z + \dparc{\tau_{xy}}{x} \dif x \dif y \dif z + \dparc{\tau_{zy}}{z} \dif x \dif y \dif z \\
 	\dif F_z = \dparc{\sigma_z}{z} \dif x \dif y \dif z + \dparc{\tau_{xz}}{x} \dif x \dif y \dif z + \dparc{\tau_{yz}}{y} \dif x \dif y \dif z
-\end{eqnarray*}
+\end{eqnarray}
 
 La fuerza por unidad de volumen, debida a los esfuerzos superficiales es entonces
 \begin{eqnarray*}
@@ -257,9 +259,11 @@ La fuerza por unidad de volumen, debida a los esfuerzos superficiales es entonce
 	+ \left( \dparc{\tau_{xz}}{x}  +  \dparc{\tau_{yz}}{y} + \dparc{\sigma_z}{z} \right) \vec k
 \end{eqnarray*}
 que se expresa de forma abreviada como
-$$ \vec f = \vec \nabla \vec {\vec \tau},$$
+\begin{equation}
+	 \vec f = \vec \nabla \vec {\vec \tau}
+\end{equation}
 donde $\vec {\vec \tau}$ es el \textcolor{red}{tensor de tensiones} (stress tensor)
-\begin{equation*}
+\begin{equation}
 	\vec{\vec{\tau}} =
 	\left(
 	\begin{array}{ccc}
@@ -267,7 +271,7 @@ donde $\vec {\vec \tau}$ es el \textcolor{red}{tensor de tensiones} (stress tens
 		\tau_{yx} & \sigma_y & \tau_{yz} \\
 		\tau_{zx} & \tau_{zy} & \sigma_z
 	\end{array}\right)
-\end{equation*}
+\end{equation}
 
 \subsection{Fuerzas m\'asicas}
 Act\'uan a distancia
@@ -288,7 +292,9 @@ En la interfase de separaci\'on entre dos l\'iquidos reside una cantidad de ener
 a la interacci\'on entre moleculas muy pr\'oximas a la superficie de separaci\'on
 
 Esta energ\'{\i}a es proporcional al \'area de la interfase.
-$$ E_s = \sigma S $$
+\begin{equation}
+	 E_s = \sigma S
+\end{equation} 
 
 El par\'ametro $\sigma$ recibe el nombre de \textcolor{blue}{tensi\'on superficial} y tiene unidades de fuerza por
 unidad de longitud. Esta fuerza es tangente a la superficie, y normal a la l\'{\i}nea de aplicaci\'on.
@@ -303,10 +309,12 @@ P.e. para la interfase entre agua y aire a $20^\circ C$, $\sigma~=~72.8\cdot10^{
 \end{center}
 Se puede demostrar (ver \cite{Bat}) que la tensi\'on provocada en la superfice es equivalente a una diferencia
 de presi\'on, como indica la \href{https://es.wikipedia.org/wiki/Ley_de_Laplace}{\textbf{ley de Young-Laplace}}
-$$\Delta p = \sigma\left(\frac{1}{R_x}+\frac{1}{R_y}\right)$$
+\begin{equation}
+	\Delta p = \sigma\left(\frac{1}{R_x}+\frac{1}{R_y}\right)
+\end{equation}
 
 
-Si los dos radios de curvatura son iguales, $R_x=R_y=R)$ (casquete esférico), esta expresión se reduce a 
+Si los dos radios de curvatura son iguales, ($R_x=R_y=R$, casquete esférico), esta expresión se reduce a 
  
 \begin{equation}
 	\Delta p = \frac{2\sigma}{R}
