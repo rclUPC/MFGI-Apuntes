@@ -31,3 +31,15 @@
 \contentsline {subsection}{\numberline {4.3.1}Definición de velocidad media}{33}{subsection.4.3.1}%
 \contentsline {section}{\numberline {4.4}Ecuación diferencial de conservación de la masa}{33}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Líneas de corriente}{34}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}Ecuación integral de la conservación de la cantidad de movimiento}{35}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Cálculo de fuerzas en un $VC$}{36}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Sistema de Referencia No Inercial}{38}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Factor de corrección de flujo de cantidad de movimiento}{38}{subsection.4.6.2}%
+\contentsline {section}{\numberline {4.7}Ecuación diferencial de la conservación de la cantidad de movimiento}{39}{section.4.7}%
+\contentsline {section}{\numberline {4.8}El tensor de tensiones para fluidos newtonianos. La ecuación de Navier-Stokes}{40}{section.4.8}%
+\contentsline {section}{\numberline {4.9}Ecuación integral de la conservación del momento cinético}{42}{section.4.9}%
+\contentsline {section}{\numberline {4.10}Cálculo de momentos en un VC}{43}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}Ejemplo 1:}{43}{subsection.4.10.1}%
+\contentsline {section}{\numberline {4.11}Las turbomáquinas hidráulicas}{46}{section.4.11}%
+\contentsline {subsection}{\numberline {4.11.1}La conservación del momento cinético y las turbomáquinas hidráulicas}{46}{subsection.4.11.1}%
+\contentsline {subsection}{\numberline {4.11.2}El triángulo de velocidades y la ecuación de Euler}{47}{subsection.4.11.2}%
