@@ -52,3 +52,18 @@
 \contentsline {subsection}{\numberline {4.15.1}Tubo de Venturi}{55}{subsection.4.15.1}%
 \contentsline {subsection}{\numberline {4.15.2}Diafragma}{55}{subsection.4.15.2}%
 \contentsline {subsection}{\numberline {4.15.3}Vaciado de un depósito}{56}{subsection.4.15.3}%
+\contentsline {chapter}{\numberline {5}Flujo con viscosidad dominante}{59}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Ecuaciones y condiciones de contorno}{59}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Flujo entre placas planas paralelas}{61}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Flujo entre placas planas paralelas con movimiento relativo }{61}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Flujo entre placas planas fijas con gradiente de presión }{62}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Ecuaciones de continuidad y Navier-Stokes en coordenadas cilíndricas}{63}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Flujo de Hagen-Poiseuille}{64}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Flujo entre dos cilindros rotatorios concéntricos}{65}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Análisis Dimensional}{67}{chapter.6}%
+\contentsline {section}{\numberline {6.1}El Teorema $\Pi $ de Buckingham}{68}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Números adimensionales básicos}{71}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Adimensionalización de ecuaciones}{72}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Similitud}{75}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Similitud cinemática}{75}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Similitud dinámica}{76}{subsection.6.4.2}%
