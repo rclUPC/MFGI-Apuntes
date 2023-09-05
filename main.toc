@@ -99,3 +99,8 @@
 \contentsline {section}{\numberline {10.6}Dimensionamiento de tuberías}{125}{section.10.6}%
 \contentsline {section}{\numberline {10.7}Conductos no circulares}{125}{section.10.7}%
 \contentsline {section}{\numberline {10.8}Pérdidas de carga secundarias}{128}{section.10.8}%
+\contentsline {chapter}{\numberline {11}Flujo Compresible}{131}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Repaso de Termodinámica}{131}{section.11.1}%
+\contentsline {section}{\numberline {11.2}La velocidad del sonido}{132}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Flujo adiabático}{133}{section.11.3}%
+\contentsline {section}{\numberline {11.4}Valores sónicos}{134}{section.11.4}%
