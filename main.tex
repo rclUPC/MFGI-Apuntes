@@ -8,9 +8,13 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{units}
-\usepackage{tikz}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
 \usepackage{url}
 \usepackage{hyperref}
+\usepackage{animate}
+
+
 \newcommand{\dif}[0]{\text{d}}
 \newcommand{\deriv}[2]{\frac{\textrm{d} #1}{\textrm{d} #2}}
 \newcommand{\derivsec}[2]{\frac{\text{d}^2 #1}{\text{d} #2^2}}
@@ -21,7 +25,9 @@
 \newcommand{\tens}{\vec{\vec \tau}}
 \newcommand{\laplace}{\triangle}
 \newcommand{\re}{\text{Re}}
-%\renewcommand{\binom}[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
+\renewcommand{\binom}[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
+\newcommand{\rot}{\vec \nabla \times }
+\newcommand{\convec}{\left(\vec v \cdot \vec \nabla\right)}
 
 \begin{document}
 
@@ -44,6 +50,8 @@
 \include{./TeX_files/chapter06-ADimensional/chapter06-ADimensional}
 \include{./TeX_files/chapter07-Turbulencia/chapter07-Turbulencia}
 \include{./TeX_files/chapter08-CapaLimite/chapter08-CapaLimite}
+\include{./TeX_files/chapter09-Externo/chapter09-Externo}
+
 \backmatter
 % bibliography, glossary and index would go here.
 
