@@ -90,3 +90,12 @@
 \contentsline {subsection}{\numberline {9.7.1}Arrastre de fricción y de presión}{108}{subsection.9.7.1}%
 \contentsline {subsection}{\numberline {9.7.2}Coeficientes aerodinámicos}{109}{subsection.9.7.2}%
 \contentsline {subsection}{\numberline {9.7.3}Perfil aerodinámico}{112}{subsection.9.7.3}%
+\contentsline {chapter}{\numberline {10}Flujo en tuberías}{115}{chapter.10}%
+\contentsline {section}{\numberline {10.1}La ecuación de Darcy-Weisbach}{115}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Flujo laminar}{116}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Flujo turbulento en tubería lisa}{118}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Flujo turbulento en tubería rugosa}{120}{section.10.4}%
+\contentsline {section}{\numberline {10.5}Cálculo de caudales}{123}{section.10.5}%
+\contentsline {section}{\numberline {10.6}Dimensionamiento de tuberías}{125}{section.10.6}%
+\contentsline {section}{\numberline {10.7}Conductos no circulares}{125}{section.10.7}%
+\contentsline {section}{\numberline {10.8}Pérdidas de carga secundarias}{128}{section.10.8}%
