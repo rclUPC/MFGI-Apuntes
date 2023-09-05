@@ -1,0 +1,315 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{Batchelor1997}{book}{}
+    \name{author}{1}{}{%
+      {{hash=BGK}{%
+         family={Batchelor},
+         familyi={B\bibinitperiod},
+         given={G.\bibnamedelima K.},
+         giveni={G\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Ministerio de Medio Ambiente, Direcci{\'{o}}n General del Instituto
+  Nacional de Meteorolog{\'{i}}a}%
+    }
+    \strng{namehash}{BGK1}
+    \strng{fullhash}{BGK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    Título original: An introduction to fluid dynamics.%
+    }
+    \field{isbn}{8483200155}
+    \field{title}{{Introducci{\'{o}}n a la din{\'{a}}mica de fluidos}}
+    \field{year}{1997}
+  \endentry
+
+  \entry{Cengel2014}{book}{}
+    \name{author}{2}{}{%
+      {{hash=cYA}{%
+         family={\c{C}engel},
+         familyi={c\bibinitperiod},
+         given={Yunus\bibnamedelima A.},
+         giveni={Y\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=CJM}{%
+         family={Cimbala},
+         familyi={C\bibinitperiod},
+         given={John\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {McGraw-Hill}%
+    }
+    \strng{namehash}{cYACJM1}
+    \strng{fullhash}{cYACJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{edition}{Third Edit}
+    \field{title}{{Fluid Mechanics}}
+    \field{year}{2014}
+  \endentry
+
+  \entry{CrespoMartinez2006}{book}{}
+    \name{author}{1}{}{%
+      {{hash=CA}{%
+         family={{Crespo Mart\'inez}},
+         familyi={C\bibinitperiod},
+         given={Antonio},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Thomson}%
+    }
+    \strng{namehash}{CA1}
+    \strng{fullhash}{CA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{isbn}{8497322924}
+    \field{pages}{XIX, 728}
+    \field{title}{{Mec\'anica de fluidos}}
+    \list{location}{1}{%
+      {Madrid :}%
+    }
+    \field{year}{2006}
+  \endentry
+
+  \entry{Kundu2012}{book}{}
+    \name{author}{3}{}{%
+      {{hash=KPK}{%
+         family={Kundu},
+         familyi={K\bibinitperiod},
+         given={Pijush\bibnamedelima K.},
+         giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=CIM}{%
+         family={Cohen},
+         familyi={C\bibinitperiod},
+         given={Ira\bibnamedelima M.},
+         giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=DDR}{%
+         family={Dowling},
+         familyi={D\bibinitperiod},
+         given={David\bibnamedelima R.},
+         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Academic Press}%
+    }
+    \strng{namehash}{KPKCIMDDR1}
+    \strng{fullhash}{KPKCIMDDR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    5th ed. Suitable for both a first or second course in fluid mechanics at
+  the graduate or advanced undergraduate level, this book presents the study of
+  how fluids behave and interact under various forces and in various applied
+  situations - whether in the liquid or gaseous state or both.%
+    }
+    \field{isbn}{9780123821003}
+    \field{pages}{891}
+    \field{title}{{Fluid mechanics}}
+    \field{year}{2012}
+  \endentry
+
+  \entry{Liggett1994}{book}{}
+    \name{author}{1}{}{%
+      {{hash=LJA}{%
+         family={Liggett},
+         familyi={L\bibinitperiod},
+         given={James\bibnamedelima A.},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {McGraw-Hill}%
+    }
+    \strng{namehash}{LJA1}
+    \strng{fullhash}{LJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    1. The Basic Equations of Fluid Mechanics -- 2. Similitude and Modeling --
+  3. Potential Flow (Fundamentals) -- 4. Potential Flow (Free Surfaces) -- 5.
+  Inertialess Flow -- 6. Laminar Flow -- 7. Turbulent Flow -- 8. Shallow Water
+  Flow -- 9. Circulation -- 10. Waves -- 11. Transport -- Appendix A. Cartesian
+  Tensors -- A Fluid Mechanics Bibliography.%
+    }
+    \field{isbn}{0070378053}
+    \field{pages}{495}
+    \field{title}{{Fluid mechanics}}
+    \list{location}{1}{%
+      {New York [etc.] :}%
+    }
+    \field{year}{1994}
+  \endentry
+
+  \entry{Munson}{book}{}
+    \name{author}{4}{}{%
+      {{hash=MBR}{%
+         family={Munson},
+         familyi={M\bibinitperiod},
+         given={Bruce\bibnamedelima Roy},
+         giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=OTH}{%
+         family={Okiishi},
+         familyi={O\bibinitperiod},
+         given={Theodore\bibnamedelima Hisao},
+         giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=HWW}{%
+         family={Huebsch},
+         familyi={H\bibinitperiod},
+         given={Wade\bibnamedelima W},
+         giveni={W\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=RAP}{%
+         family={Rothmayer},
+         familyi={R\bibinitperiod},
+         given={Alric\bibnamedelima P},
+         giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Singapore}%
+    }
+    \strng{namehash}{MBR+1}
+    \strng{fullhash}{MBROTHHWWRAP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Fluid mechanics}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Shames2003}{book}{}
+    \name{author}{1}{}{%
+      {{hash=SIH}{%
+         family={Shames},
+         familyi={S\bibinitperiod},
+         given={Irving\bibnamedelima Herman},
+         giveni={I\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {McGraw-Hill}%
+    }
+    \strng{namehash}{SIH1}
+    \strng{fullhash}{SIH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    4th ed.%
+    }
+    \field{isbn}{007119889X}
+    \field{title}{{Mechanics of fluids}}
+    \field{year}{2003}
+  \endentry
+
+  \entry{Virto1}{book}{}
+    \name{author}{1}{}{%
+      {{hash=VL}{%
+         family={Virto},
+         familyi={V\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Edicions UPC, Barcelona}%
+    }
+    \strng{namehash}{VL1}
+    \strng{fullhash}{VL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{title}{Mec{\`a}nica de Fluids. Fonaments I}
+    \field{year}{1993}
+  \endentry
+
+  \entry{Virto2}{book}{}
+    \name{author}{1}{}{%
+      {{hash=VL}{%
+         family={Virto},
+         familyi={V\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Edicions UPC, Barcelona}%
+    }
+    \strng{namehash}{VL1}
+    \strng{fullhash}{VL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{title}{Mec{\`a}nica de Fluids. Fonaments II}
+    \field{year}{1993}
+  \endentry
+
+  \entry{White2008}{book}{}
+    \name{author}{1}{}{%
+      {{hash=WFM}{%
+         family={White},
+         familyi={W\bibinitperiod},
+         given={Frank\bibnamedelima M.},
+         giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {McGraw-Hill}%
+    }
+    \strng{namehash}{WFM1}
+    \strng{fullhash}{WFM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    6a. ed.%
+    }
+    \field{isbn}{8448166035}
+    \field{title}{{Mec{\'{a}}nica de fluidos}}
+    \field{year}{2008}
+  \endentry
+\enddatalist
+\endinput
