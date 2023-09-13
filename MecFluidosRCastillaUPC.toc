@@ -16,98 +16,102 @@
 \contentsline {section}{\numberline {2.4}Principio de Arquímedes}{17}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Segunda ley de Arquímedes}{18}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Estabilidad}{19}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Cinemática de fluidos}{23}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Descripción Euleriana y Lagrangiana}{23}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Lineas de corriente, trayectorias y lineas de traza}{23}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Derivada sustancial}{24}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Circulación, Flujo y Vorticidad}{25}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Movimiento relativo en el entorno de un punto}{26}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Ecuaciones de la Dinámica}{29}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introducción}{29}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Formulación integral y diferencial}{29}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Sistema y volumen de control}{30}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}El teorema de arrastre de Reynolds}{30}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Ecuación integral de conservación de la masa}{32}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Definición de velocidad media}{33}{subsection.4.3.1}%
-\contentsline {section}{\numberline {4.4}Ecuación diferencial de conservación de la masa}{33}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Líneas de corriente}{34}{subsection.4.4.1}%
-\contentsline {section}{\numberline {4.5}Ecuación integral de la conservación de la cantidad de movimiento}{35}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Cálculo de fuerzas en un $VC$}{36}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Sistema de Referencia No Inercial}{38}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}Factor de corrección de flujo de cantidad de movimiento}{38}{subsection.4.6.2}%
-\contentsline {section}{\numberline {4.7}Ecuación diferencial de la conservación de la cantidad de movimiento}{39}{section.4.7}%
-\contentsline {section}{\numberline {4.8}El tensor de tensiones para fluidos newtonianos. La ecuación de Navier-Stokes}{40}{section.4.8}%
-\contentsline {section}{\numberline {4.9}Ecuación integral de la conservación del momento cinético}{42}{section.4.9}%
-\contentsline {section}{\numberline {4.10}Cálculo de momentos en un VC}{43}{section.4.10}%
-\contentsline {subsection}{\numberline {4.10.1}Ejemplo 1:}{43}{subsection.4.10.1}%
-\contentsline {section}{\numberline {4.11}Las turbomáquinas hidráulicas}{46}{section.4.11}%
-\contentsline {subsection}{\numberline {4.11.1}La conservación del momento cinético y las turbomáquinas hidráulicas}{46}{subsection.4.11.1}%
-\contentsline {subsection}{\numberline {4.11.2}El triángulo de velocidades y la ecuación de Euler}{47}{subsection.4.11.2}%
-\contentsline {section}{\numberline {4.12}Ecuación integral de la conservación de la energía}{49}{section.4.12}%
-\contentsline {subsection}{\numberline {4.12.1}Análisis del trabajo}{49}{subsection.4.12.1}%
-\contentsline {subsection}{\numberline {4.12.2}Ecuación de Bernoulli}{50}{subsection.4.12.2}%
-\contentsline {section}{\numberline {4.13}Ecuación diferencial de la conservación de la energía}{51}{section.4.13}%
-\contentsline {section}{\numberline {4.14}Derivación de la Ecuación de Bernoulli a partir de la Ecuación de Euler}{53}{section.4.14}%
-\contentsline {section}{\numberline {4.15}Presión estática, dinámica y de remanso}{53}{section.4.15}%
-\contentsline {subsection}{\numberline {4.15.1}Tubo de Venturi}{55}{subsection.4.15.1}%
-\contentsline {subsection}{\numberline {4.15.2}Diafragma}{55}{subsection.4.15.2}%
-\contentsline {subsection}{\numberline {4.15.3}Vaciado de un depósito}{56}{subsection.4.15.3}%
-\contentsline {chapter}{\numberline {5}Flujo con viscosidad dominante}{59}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Ecuaciones y condiciones de contorno}{59}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Flujo entre placas planas paralelas}{61}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Flujo entre placas planas paralelas con movimiento relativo }{61}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Flujo entre placas planas fijas con gradiente de presión }{62}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Ecuaciones de continuidad y Navier-Stokes en coordenadas cilíndricas}{63}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Flujo de Hagen-Poiseuille}{64}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Flujo entre dos cilindros rotatorios concéntricos}{65}{section.5.5}%
-\contentsline {chapter}{\numberline {6}Análisis Dimensional}{67}{chapter.6}%
-\contentsline {section}{\numberline {6.1}El Teorema $\Pi $ de Buckingham}{68}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Números adimensionales básicos}{71}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Adimensionalización de ecuaciones}{72}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Similitud}{75}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Similitud cinemática}{75}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.4.2}Similitud dinámica}{76}{subsection.6.4.2}%
-\contentsline {chapter}{\numberline {7}Turbulencia}{79}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Promediado de Reynolds}{79}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Interpretación física del tensor de Reynolds}{83}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Ley de pared y capa límite turbulenta}{84}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Capa Límite}{87}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Capa límite laminar. Ecuación de Blasius}{89}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Ecuación de von Kármán}{90}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Capa límite turbulenta}{93}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Capa límite con gradiente de presiones. Separación de flujo}{96}{section.8.4}%
-\contentsline {subsection}{\numberline {8.4.1}El método de Thwaites}{98}{subsection.8.4.1}%
-\contentsline {chapter}{\numberline {9}Flujo Ideal y Externo}{101}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Ecuación de Euler}{101}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Función de corriente}{102}{section.9.2}%
-\contentsline {section}{\numberline {9.3}La ecuación de vorticidad}{103}{section.9.3}%
-\contentsline {section}{\numberline {9.4}Flujos potenciales elementales}{104}{section.9.4}%
-\contentsline {section}{\numberline {9.5}Circulación}{105}{section.9.5}%
-\contentsline {subsection}{\numberline {9.5.1}Dos ejemplos de flujos formados como superposición de los tres flujos elementales:}{106}{subsection.9.5.1}%
-\contentsline {section}{\numberline {9.6}Aerodinámica}{107}{section.9.6}%
-\contentsline {subsection}{\numberline {9.6.1}Flujo alrededor de un cilindro}{107}{subsection.9.6.1}%
-\contentsline {section}{\numberline {9.7}Fuerzas aerodinámicas}{107}{section.9.7}%
-\contentsline {subsection}{\numberline {9.7.1}Arrastre de fricción y de presión}{108}{subsection.9.7.1}%
-\contentsline {subsection}{\numberline {9.7.2}Coeficientes aerodinámicos}{109}{subsection.9.7.2}%
-\contentsline {subsection}{\numberline {9.7.3}Perfil aerodinámico}{112}{subsection.9.7.3}%
-\contentsline {chapter}{\numberline {10}Flujo en tuberías}{115}{chapter.10}%
-\contentsline {section}{\numberline {10.1}La ecuación de Darcy-Weisbach}{115}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Flujo laminar}{116}{section.10.2}%
-\contentsline {section}{\numberline {10.3}Flujo turbulento en tubería lisa}{118}{section.10.3}%
-\contentsline {section}{\numberline {10.4}Flujo turbulento en tubería rugosa}{120}{section.10.4}%
-\contentsline {section}{\numberline {10.5}Cálculo de caudales}{123}{section.10.5}%
-\contentsline {section}{\numberline {10.6}Dimensionamiento de tuberías}{125}{section.10.6}%
-\contentsline {section}{\numberline {10.7}Conductos no circulares}{125}{section.10.7}%
-\contentsline {section}{\numberline {10.8}Pérdidas de carga secundarias}{128}{section.10.8}%
-\contentsline {chapter}{\numberline {11}Flujo Compresible}{131}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Repaso de Termodinámica}{131}{section.11.1}%
-\contentsline {section}{\numberline {11.2}La velocidad del sonido}{132}{section.11.2}%
-\contentsline {section}{\numberline {11.3}Flujo adiabático}{133}{section.11.3}%
-\contentsline {section}{\numberline {11.4}Valores sónicos}{134}{section.11.4}%
-\contentsline {section}{\numberline {11.5}Difusores e inyectores}{135}{section.11.5}%
-\contentsline {section}{\numberline {11.6}Ondas de choque normales}{139}{section.11.6}%
-\contentsline {section}{\numberline {11.7}Toberas}{142}{section.11.7}%
-\contentsline {subsection}{\numberline {11.7.1}Tobera convergente}{142}{subsection.11.7.1}%
-\contentsline {subsection}{\numberline {11.7.2}Tobera convergente-divergente}{143}{subsection.11.7.2}%
-\contentsline {section}{\numberline {11.8}El cono de Mach}{144}{section.11.8}%
-\contentsline {section}{\numberline {11.9}Onda de choque oblicua}{146}{section.11.9}%
+\contentsline {section}{\numberline {2.7}Presiones con aceleración}{22}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Introducción. Equilibrio de una partícula}{22}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Aceleración lineal}{23}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.7.3}Rotación como sólido rígido}{24}{subsection.2.7.3}%
+\contentsline {chapter}{\numberline {3}Cinemática de fluidos}{27}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Descripción Euleriana y Lagrangiana}{27}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Lineas de corriente, trayectorias y lineas de traza}{27}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Derivada sustancial}{28}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Circulación, Flujo y Vorticidad}{29}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Movimiento relativo en el entorno de un punto}{30}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Ecuaciones de la Dinámica}{33}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introducción}{33}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Formulación integral y diferencial}{33}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Sistema y volumen de control}{34}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}El teorema de arrastre de Reynolds}{34}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Ecuación integral de conservación de la masa}{36}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Definición de velocidad media}{37}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}Ecuación diferencial de conservación de la masa}{37}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Líneas de corriente}{38}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}Ecuación integral de la conservación de la cantidad de movimiento}{39}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Cálculo de fuerzas en un $VC$}{40}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Sistema de Referencia No Inercial}{42}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Factor de corrección de flujo de cantidad de movimiento}{42}{subsection.4.6.2}%
+\contentsline {section}{\numberline {4.7}Ecuación diferencial de la conservación de la cantidad de movimiento}{43}{section.4.7}%
+\contentsline {section}{\numberline {4.8}El tensor de tensiones para fluidos newtonianos. La ecuación de Navier-Stokes}{44}{section.4.8}%
+\contentsline {section}{\numberline {4.9}Ecuación integral de la conservación del momento cinético}{46}{section.4.9}%
+\contentsline {section}{\numberline {4.10}Cálculo de momentos en un VC}{47}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}Ejemplo 1:}{47}{subsection.4.10.1}%
+\contentsline {section}{\numberline {4.11}Las turbomáquinas hidráulicas}{50}{section.4.11}%
+\contentsline {subsection}{\numberline {4.11.1}La conservación del momento cinético y las turbomáquinas hidráulicas}{50}{subsection.4.11.1}%
+\contentsline {subsection}{\numberline {4.11.2}El triángulo de velocidades y la ecuación de Euler}{51}{subsection.4.11.2}%
+\contentsline {section}{\numberline {4.12}Ecuación integral de la conservación de la energía}{53}{section.4.12}%
+\contentsline {subsection}{\numberline {4.12.1}Análisis del trabajo}{53}{subsection.4.12.1}%
+\contentsline {subsection}{\numberline {4.12.2}Ecuación de Bernoulli}{54}{subsection.4.12.2}%
+\contentsline {section}{\numberline {4.13}Ecuación diferencial de la conservación de la energía}{55}{section.4.13}%
+\contentsline {section}{\numberline {4.14}Derivación de la Ecuación de Bernoulli a partir de la Ecuación de Euler}{57}{section.4.14}%
+\contentsline {section}{\numberline {4.15}Presión estática, dinámica y de remanso}{57}{section.4.15}%
+\contentsline {subsection}{\numberline {4.15.1}Tubo de Venturi}{59}{subsection.4.15.1}%
+\contentsline {subsection}{\numberline {4.15.2}Diafragma}{59}{subsection.4.15.2}%
+\contentsline {subsection}{\numberline {4.15.3}Vaciado de un depósito}{60}{subsection.4.15.3}%
+\contentsline {chapter}{\numberline {5}Flujo con viscosidad dominante}{63}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Ecuaciones y condiciones de contorno}{63}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Flujo entre placas planas paralelas}{65}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Flujo entre placas planas paralelas con movimiento relativo }{65}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Flujo entre placas planas fijas con gradiente de presión }{66}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Ecuaciones de continuidad y Navier-Stokes en coordenadas cilíndricas}{67}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Flujo de Hagen-Poiseuille}{68}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Flujo entre dos cilindros rotatorios concéntricos}{69}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Análisis Dimensional}{71}{chapter.6}%
+\contentsline {section}{\numberline {6.1}El Teorema $\Pi $ de Buckingham}{72}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Números adimensionales básicos}{75}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Adimensionalización de ecuaciones}{76}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Similitud}{79}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Similitud cinemática}{79}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Similitud dinámica}{80}{subsection.6.4.2}%
+\contentsline {chapter}{\numberline {7}Turbulencia}{83}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Promediado de Reynolds}{83}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Interpretación física del tensor de Reynolds}{87}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Ley de pared y capa límite turbulenta}{88}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Capa Límite}{91}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Capa límite laminar. Ecuación de Blasius}{93}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Ecuación de von Kármán}{94}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Capa límite turbulenta}{97}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Capa límite con gradiente de presiones. Separación de flujo}{100}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}El método de Thwaites}{102}{subsection.8.4.1}%
+\contentsline {chapter}{\numberline {9}Flujo Ideal y Externo}{105}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Ecuación de Euler}{105}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Función de corriente}{106}{section.9.2}%
+\contentsline {section}{\numberline {9.3}La ecuación de vorticidad}{107}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Flujos potenciales elementales}{108}{section.9.4}%
+\contentsline {section}{\numberline {9.5}Circulación}{109}{section.9.5}%
+\contentsline {subsection}{\numberline {9.5.1}Dos ejemplos de flujos formados como superposición de los tres flujos elementales:}{110}{subsection.9.5.1}%
+\contentsline {section}{\numberline {9.6}Aerodinámica}{111}{section.9.6}%
+\contentsline {subsection}{\numberline {9.6.1}Flujo alrededor de un cilindro}{111}{subsection.9.6.1}%
+\contentsline {section}{\numberline {9.7}Fuerzas aerodinámicas}{111}{section.9.7}%
+\contentsline {subsection}{\numberline {9.7.1}Arrastre de fricción y de presión}{112}{subsection.9.7.1}%
+\contentsline {subsection}{\numberline {9.7.2}Coeficientes aerodinámicos}{113}{subsection.9.7.2}%
+\contentsline {subsection}{\numberline {9.7.3}Perfil aerodinámico}{116}{subsection.9.7.3}%
+\contentsline {chapter}{\numberline {10}Flujo en tuberías}{119}{chapter.10}%
+\contentsline {section}{\numberline {10.1}La ecuación de Darcy-Weisbach}{119}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Flujo laminar}{120}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Flujo turbulento en tubería lisa}{122}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Flujo turbulento en tubería rugosa}{124}{section.10.4}%
+\contentsline {section}{\numberline {10.5}Cálculo de caudales}{127}{section.10.5}%
+\contentsline {section}{\numberline {10.6}Dimensionamiento de tuberías}{129}{section.10.6}%
+\contentsline {section}{\numberline {10.7}Conductos no circulares}{129}{section.10.7}%
+\contentsline {section}{\numberline {10.8}Pérdidas de carga secundarias}{132}{section.10.8}%
+\contentsline {chapter}{\numberline {11}Flujo Compresible}{135}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Repaso de Termodinámica}{135}{section.11.1}%
+\contentsline {section}{\numberline {11.2}La velocidad del sonido}{136}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Flujo adiabático}{137}{section.11.3}%
+\contentsline {section}{\numberline {11.4}Valores sónicos}{138}{section.11.4}%
+\contentsline {section}{\numberline {11.5}Difusores e inyectores}{139}{section.11.5}%
+\contentsline {section}{\numberline {11.6}Ondas de choque normales}{143}{section.11.6}%
+\contentsline {section}{\numberline {11.7}Toberas}{146}{section.11.7}%
+\contentsline {subsection}{\numberline {11.7.1}Tobera convergente}{146}{subsection.11.7.1}%
+\contentsline {subsection}{\numberline {11.7.2}Tobera convergente-divergente}{147}{subsection.11.7.2}%
+\contentsline {section}{\numberline {11.8}El cono de Mach}{148}{section.11.8}%
+\contentsline {section}{\numberline {11.9}Onda de choque oblicua}{150}{section.11.9}%
