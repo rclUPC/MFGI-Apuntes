@@ -338,3 +338,1215 @@ Interpretación física:
 		Calcular la función de corriente y dibujar las lineas de corriente
 		para el caso más simple.
 
+<<<<<<< HEAD
+=======
+\section{Ecuación integral de la conservación de la cantidad de movimiento}
+
+	
+	En este caso, $F=m\vec{u}$ y $f=\vec{u}$
+	\textbf{Importante:}
+		Carácter vectorial de $F$ y $f$
+	
+	T. de Transporte de Reynolds: 
+	
+	\begin{equation}
+		\deriv{m\vec{u}}{t}=\deriv{\phantom{}}{t}\int_{VC}\rho\vec{u}\,\text{d}V+\oint_{SC}\rho\vec{u}\,\vec{u}_{r}\cdot\text{d}\vec{S}
+	\end{equation}
+	
+	donde $\vec{u}_{r}$ es la velocidad relativa del fluido respecto
+	de la $SC$, que no tiene por qué ser igual a $\vec{u}$, la velocidad
+	relativa al Sistema de Referencia.
+
+	
+	Según la Segunda Ley de la Dinámica de Newton, 
+	
+\begin{equation}
+		\deriv{m\vec{u}}{t}=\vec{F}_{T}
+\end{equation}
+	
+	donde $\vec{F}$ es la suma total de \underline{todas} las fuerzas
+	que actúan sobre el $VC$, tanto \textcolor{blue}{superficiales} como
+	\textcolor{blue}{másicas}. Las fuerzas superficiales són producidas
+	por todos los \textcolor{blue}{fluidos} y \textcolor{blue}{sólidos}
+	incluidos en el $VC$.
+	
+	Debido al caracter vectorial de la cantidad de movimiento: 
+	\begin{eqnarray}
+		{F_{T}}_{x} & = & \deriv{\phantom{}}{t}\int_{VC}\rho u\,\text{d}V+\oint_{SC}\rho u\,\vec{u}_{r}\cdot\text{d}\vec{S}\\
+		{F_{T}}_{y} & = & \deriv{\phantom{}}{t}\int_{VC}\rho v\,\text{d}V+\oint_{SC}\rho v\,\vec{u}_{r}\cdot\text{d}\vec{S}\\
+		{F_{T}}_{z} & = & \deriv{\phantom{}}{t}\int_{VC}\rho w\,\text{d}V+\oint_{SC}\rho w\,\vec{u}_{r}\cdot\text{d}\vec{S}
+	\end{eqnarray}
+	
+
+
+\section{Cálculo de fuerzas en un $VC$}
+
+	
+	Supongamos, por simplicidad, que el $VC$ está en reposo respecto
+	del SR inercial.
+	
+	Las fuerzas superficiales que actúan sobre el material del VC són 
+	\begin{itemize}
+		\item tensiones de los sólidos que atraviesan el $VC$. 
+		\item esfuerzos normales (presión) y tangenciales del fluido.\\
+		Cálculo de presiones: 
+		\[
+		\vec{F}_{p}=-\oint_{SC}p\,\text{d}\vec{S}
+		\]
+		Si la presión és uniforme en toda la $SC$, $\vec{F}_{p}=0$. 
+	\end{itemize}
+
+	
+	En muchas ocasiones los problemas prácticos de Ingeniería relacionados
+	con la ecuación integral del conservación de la cantidad de movimiento
+	són, básicamente, encontrar la fuerza que se ejerce sobre un cierto
+	sólido en contacto con un fluido en movimiento.
+	
+	Ejemplos: 
+	\begin{itemize}
+		\item Fuerza sobre uniones en tuberías. 
+		\item Fuerza sobre toberas, inyectores, \ldots{} 
+		\item Fuerza sobre un vehículo aéreo o espacial. 
+		\item Fuerza de un chorro sobre un obstáculo. 
+		\item Fuerza sobre un vertedero. 
+		\item \ldots{} 
+	\end{itemize}
+	La fuerza que se quiere calcular es siempre uno de los términos de
+	$\vec{F}_{T}$. La raiz del problema estriba en aislar éste término
+	en la relación de conservación de la cantidad de movimiento.
+
+	
+	\subsection*{Ejemplo (extraido de \cite{White2008}):}
+		
+\begin{center}
+	\includegraphics[width=0.5\linewidth]{TeX_files/chapter04-Dinamica/ejemploCM}
+\end{center}
+
+		
+		Como hipótesis, suponemos que la sección del chorro es idéntica a
+		la entrada y a la salida, de forma que, por la conservación de la
+		masa, $\|\vec{u}_{1}\|=\|\vec{u}_{2}\|$.
+		
+		Queremos calcular la fuerza $\vec{F}$ que ejerce el chorro sobre
+		el soporte.
+		
+		En realidad, lo que calcularemos será la fuerza $\vec{F}'$ que ejerce
+		el soporte sobre el chorro. 
+		
+		Según la 3a. Ley de la Dinámica de Newton, $\vec{F}=-\vec{F}'$.
+
+	
+
+		\[
+		\vec{F}'+\vec{F}_{m}+\vec{F}_{s}=\deriv{\phantom{}}{t}\int_{VC}\rho\vec{u}\,\text{d}V+\oint_{SC}\rho\vec{u}\,\vec{u}_{r}\cdot\text{d}\vec{S}
+		\]
+		$\vec{F}_{m}$: \emph{Fuerza de la gravedad.} Dado que no tenemos
+		información sobre el volumen del chorro en el interior del VC, adoptamos
+		la hipótesis de que $\|\vec{F}_{m}\|$ será muy pequeño en comparación
+		con el resto de términos y, por lo tanto, lo despreciamos. A posteriori,
+		debería comprobarse la validez de esta hipótesis.
+		
+		$\vec{F}_{s}$: \emph{Fuerza superficiales}, que engloban la presión
+		y los esfuerzos tangenciales (fricción). Dado que la presión es uniforme,
+		se anula. En cuanto a las fuerzas debidas a la fricción no hay ningun
+		argumento para calcularlas, de forma que adoptamos la hipótesis de
+		que són menospreciables.
+
+
+		En cuanto al segundo miembro, el chorro es estacionario en el interior
+		del VC, de forma que $\deriv{\phantom{}}{t}\int_{VC}\rho\vec{u}\,\text{d}V=0$
+		
+		La conservación de la cantidad de movimiento queda como 
+		\[
+		\vec{F}'=\oint_{SC}\rho\vec{u}\,\vec{u}\cdot\text{d}\vec{S}
+		\]
+		
+		La velocidad sólo está definida en las secciones $S_{1}$ y $S_{2}$
+		de $SC$, de forma que 
+		\[
+		\vec{F}'=\int_{S_{1}}\rho\vec{u}\,\vec{u}\cdot\text{d}\vec{S}+\int_{S_{2}}\rho\vec{u}\,\vec{u}\cdot\text{d}\vec{S}
+		\]
+		En componentes, según el SR de la figura, 
+		\begin{eqnarray*}
+			F'_{x} & = & \int_{S_{1}}\rho u\,\vec{u}\cdot\text{d}\vec{S}+\int_{S_{2}}\rho u\,\vec{u}\cdot\text{d}\vec{S}\\
+			F'_{y} & = & \int_{S_{1}}\rho v\,\vec{u}\cdot\text{d}\vec{S}+\int_{S_{2}}\rho v\,\vec{u}\cdot\text{d}\vec{S}
+		\end{eqnarray*}
+
+	
+		Es fácil ver que 
+		\[
+		\begin{array}{cc}
+			\begin{cases}
+				u=u & \text{en}\;S\\
+				v=0 & \text{en}\;S_{1}
+			\end{cases} & \begin{cases}
+				u=u\cos\theta & \text{en}\;S_{2}\\
+				v=u\sin\theta & \text{en}\;S_{2}
+		\end{cases}\end{array}
+		\]
+		De forma que 
+		\[
+		\left\{ \begin{array}{ll}
+			F'_{x} & =\int_{S_{1}}\rho u\vec{u}\cdot\text{d}\vec{S}+\int_{S_{2}}\rho u\cos\theta\vec{u}\cdot\text{d}\vec{S}\\
+			& =\rho v\int_{S_{1}}\vec{u}\cdot\text{d}\vec{S}+\rho u\cos\theta\int_{S_{2}}\vec{u}\cdot\text{d}\vec{S}\\
+			F'_{y} & =\int_{S_{2}}\rho u\sin\theta\vec{u}\cdot\text{d}\vec{S}=\rho u\sin\theta\int_{S_{2}}\vec{u}\cdot\text{d}\vec{S}
+		\end{array}\right.
+		\]
+		
+		\[
+		\Rightarrow\left\{ \begin{array}{l}
+			F'_{x}=\rho u(-Q)+\rho u\cos\theta Q=\rho uQ(cos\theta-1)\\
+			F'_{y}=\rho u\sin\theta Q
+		\end{array}\right.
+		\]
+		
+		\[
+		\Rightarrow\fbox{\ensuremath{\left\{  \begin{array}{l}
+					F_{x}=\rho Su^{2}(1-\cos\theta)\\
+					F_{y}=-\rho Su^{2}\sin\theta
+				\end{array}\right.}}
+		\]
+
+	
+	\subsection*{Actividad 1:}
+		Una manguera antiincendios, de 10 cm de diámetro, da 100 l/s de
+		agua con una presión de 1600 kPa. Al final de la manguera hay un inyector
+		que reduce el diámetro a 2,5 cm. Estima suponiendo que ésta és la
+		presión al llegar el agua al inyector, la fuerza que ejerce el agua
+		sobre el mismo.
+
+
+\subsection{Sistema de Referencia No Inercial}
+	
+	El SR está ahora acelerado. La conservación de la cantidad de movimiento
+	es 
+	\[
+	\vec{F}_{T}-\int_{VC}\rho\vec{a}'\text{d}V=\int_{VC}\dparc{\rho\vec{u}}{t}\,\text{d}V+\oint_{SC}\rho\vec{u}\,\vec{u}\cdot\text{d}\vec{S}
+	\]
+	donde 
+	\[
+	\vec{a}'=\underbrace{\frac{\text{d}^{2}\vec{R}}{\text{d}t^{2}}}_{\text{ac. lineal del SR}}+\underbrace{\deriv{\vec{\Omega}}{t}\times\vec{r}}_{\text{ac. angular del SR}}+\underbrace{2\left(\vec{\Omega}\times\vec{u}\right)}_{\text{ac. de Coriolis}}+\underbrace{\vec{\Omega}\times\left(\vec{\Omega}\times\vec{r}\right)}_{\text{ac. centr\'\i fuga}}
+	\]
+	
+
+
+\subsection{Factor de corrección de flujo de cantidad de movimiento}
+
+	
+	Flujo de cantidad de movimiento: 
+	\[
+	\Phi=\int_{S}\rho\vec{u}\left(\vec{u}\cdot\text{d}\vec{S}\right)
+	\]
+	
+	Supongamos que $\vec{u}\parallel\text{d}\vec{S}$ y $\vec{u}=u\vec{\imath}$
+	en todo $S$ (p. e., en una tubería), de forma que $\Phi=\int_{S}\rho u^{2}\text{d}S$
+	
+	A veces es conveniente relacionarlo con la velocidad media, $\Phi=\beta\rho\overline{u}^{2}S$,
+	donde $\beta>1$ es un factor de conversión, que se calcula mediante
+	\[
+	\beta=\frac{1}{S}\int\left(\frac{u}{\overline{u}}\right)^{2}\text{d}S
+	\]
+	si el fluido es incompresible.
+	\subsection*{Actividad 2:}
+		
+		Calcular el valor de $\beta$ para un perfil parabólico de velocidad. 
+
+\section{Ecuación diferencial de la conservación de la cantidad de movimiento}
+
+	
+	La ecuación integral es, aplicando el TRR: 
+	
+	\begin{equation}
+		\int_{VC}\dparc{\phantom{t}}{t}\left(\rho\vec{u}\right)\text{d}V+\oint_{SC}\rho\vec{u}\left(\vec{u}\cdot\text{d}\vec{S}\right)=\vec{F}_{T}
+	\end{equation}
+	
+	
+	Aplicando el Teorema de la Divergencia a la integral sobre la Superficie
+	de Control (ver, p.e., \cite{Liggett1994}, pag. 6), 
+	
+	\begin{equation}
+		\oint_{SC}\rho\vec{u}\left(\vec{u}\cdot\text{d}\vec{S}\right)=\int_{VC}\vec{\nabla}\cdot\left(\vec{u}\rho\vec{u}\right)\text{d}V
+	\end{equation}
+	
+	obtenemos 
+	
+	\begin{equation}
+		\int_{VC}\left[\dparc{\phantom{t}}{t}\left(\rho\vec{u}\right)+\vec{\nabla}\cdot\left(\vec{u}\rho\vec{u}\right)\right]\text{d}V=\vec{F}_{T}
+	\end{equation}
+	
+	
+	
+	Por tanto, la fuerza sobre un volumen elemental de fluido es 
+	\begin{eqnarray}
+		\vec{f}_{T} & = & \dparc{\phantom{t}}{t}\left(\rho\vec{u}\right)+\vec{\nabla}\cdot\left(\vec{u}\rho\vec{u}\right)\\
+		& = & \dparc{\phantom{t}}{t}\left(\rho\vec{u}\right)+\dparc{\phantom{x}}{x}\left(\rho u\vec{u}\right)+\dparc{\phantom{y}}{y}\left(\rho v\vec{u}\right)+\dparc{\phantom{z}}{z}\left(\rho w\vec{u}\right)
+	\end{eqnarray}
+	
+	En forma de componentes: 
+	\begin{eqnarray}
+		{f_{T}}_{x} & = & \dparc{\phantom{t}}{t}\left(\rho u\right)+\dparc{\phantom{x}}{x}\left(\rho u^{2}\right)+\dparc{\phantom{y}}{y}\left(\rho vu\right)+\dparc{\phantom{z}}{z}\left(\rho wu\right)\\
+		{f_{T}}_{y} & = & \dparc{\phantom{t}}{t}\left(\rho v\right)+\dparc{\phantom{x}}{x}\left(\rho uv\right)+\dparc{\phantom{y}}{y}\left(\rho v^{2}\right)+\dparc{\phantom{z}}{z}\left(\rho wv\right)\\
+		{f_{T}}_{z} & = & \dparc{\phantom{t}}{t}\left(\rho w\right)+\dparc{\phantom{x}}{x}\left(\rho uw\right)+\dparc{\phantom{y}}{y}\left(\rho vw\right)+\dparc{\phantom{z}}{z}\left(\rho w^{2}\right)
+	\end{eqnarray}
+	
+
+	
+	Podemos simplificar un poco usando 
+	\begin{eqnarray}
+		\dparc{\phantom{t}}{t}\left(\rho\vec{u}\right) & = & \vec{u}\,\dparc{\rho}{t}+\rho\,\dparc{\vec{u}}{t}\\
+		\dparc{\phantom{x}}{x}\left(\rho u\vec{u}\right) & = & \vec{u}\,\dparc{\rho u}{x}+\rho u\,\dparc{\vec{u}}{x}\\
+		\dparc{\phantom{y}}{y}\left(\rho v\vec{u}\right) & = & \vec{u}\,\dparc{\rho v}{y}+\rho v\,\dparc{\vec{u}}{y}\\
+		\dparc{\phantom{z}}{z}\left(\rho w\vec{u}\right) & = & \vec{u}\,\dparc{\rho w}{x}+\rho w\,\dparc{\vec{u}}{z}
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		\Rightarrow\vec{f}_{T} & = & \vec{u}\,\dparc{\rho}{t}+\rho\,\dparc{\vec{u}}{t}+\vec{u}\left(\vec{\nabla}\cdot\rho\vec{u}\right)+\rho\left(\vec{u}\cdot\nabla\right)\vec{u}\\
+		& = & \vec{u}\cdot\underbrace{\left[\dparc{\rho}{t}+\vec{\nabla}\cdot\rho\vec{u}\right]}_{=0\;\text{por continuidad}}+\rho\,\dparc{\vec{u}}{t}+\rho\left(\vec{u}\cdot\vec{\nabla}\right)\vec{u}
+	\end{eqnarray}
+	
+
+	
+	La \textcolor{red}{ecuación diferencial de conservación de la cantidad
+		de movimiento} queda como 
+	
+	\begin{equation}
+		\boxed{\vec{f}_{T}=\rho\,\dparc{\vec{u}}{t}+\rho\left(\vec{u}\cdot\vec{\nabla}\right)\vec{u}}
+	\end{equation}
+	
+	
+	Para simplificar, supongamos que 
+	\[
+	\vec{f}_{T}=\text{gravedad}+\text{fricción fluido-fluido}
+	\]
+	
+	\[
+	\vec{f}_{T}=\rho\vec{g}+\vec{\nabla}\cdot\vec{\vec{\tau}}
+	\]
+	de forma que 
+	
+	\begin{equation}
+		\rho\,\dparc{\vec{u}}{t}+\rho\left(\vec{u}\cdot\vec{\nabla}\right)\vec{u}=\rho\vec{g}+\vec{\nabla}\cdot\vec{\vec{\tau}}
+	\end{equation}
+	
+	
+	En forma de componentes: 
+	
+	\begin{equation}
+		\rho\left(\dparc{u_{i}}{t}+u_{j}\dparc{u_{i}}{x_{j}}\right)=\rho g_{i}+\dparc{\tau_{ij}}{x_{j}}
+	\end{equation}
+	
+	
+
+\section{El tensor de tensiones para fluidos newtonianos. La ecuación de Navier-Stokes}
+
+	
+	El mayor problema de la ecuación anterior es el cálculo de $\vec{\vec{\tau}}$.
+	Éste tensor agrupa tanto los esfuerzos normales como los tangenciales.
+	
+	Los esfuerzos normales no són la presión, ya que ésta no está definida
+	de forma estricta para fluidos en movimiento(ver \cite{Batchelor1997},
+	capítulo 3), pero se puede definir una presión análoga a la usada
+	en fluidostática de la forma $p=-\frac{1}{3}\tau_{ii}$
+	
+	De esta forma, el tensor de tensiones es 
+	\[
+	\tens=\underbrace{-p\mathbb{I}}_{\text{parte isótropa}}+\underbrace{\tens'}_{\begin{footnotesize}\begin{array}{c}
+				\text{parte anisótropa (con traza nula)}\end{array}\end{footnotesize}}
+	\]
+	
+	\[
+	=\left(\begin{array}{ccc}
+		-p & 0 & 0\\
+		0 & -p & 0\\
+		0 & 0 & -p
+	\end{array}\right)+\left(\begin{array}{ccc}
+		\tau_{xx}+p & \tau_{xy} & \tau_{xz}\\
+		\tau_{yx} & \tau_{yy}+p & \tau_{yz}\\
+		\tau_{zx} & \tau_{zy} & \tau_{zz}+p
+	\end{array}\right)
+	\]
+	
+	
+	Se puede demostrar(ver, p.e., \cite{Batchelor1997} o \cite{CrespoMartinez2006})
+	que, para \textcolor{blue}{fluidos newtonianos}, $\tens'$ está relacionado
+	con la parte simétrica de la divergencia de la velocidad (ver el segundo
+	tema de cinemática) mediante 
+	
+\begin{equation}
+		\tens'=2\mu\left[\left(\vec{\nabla}\vec{u}\right)^{S}-\frac{1}{3}\left(\vec{\nabla}\cdot\vec{u}\right)\mathbb{I}\right]
+\end{equation}
+	
+	donde $\mu$ es la viscosidad dinámica.
+	
+	Substituyendo en la ecuación diferencial de la conservación de la
+	cantidad de movimiento, 
+	
+	\begin{equation}
+		\rho\,\dparc{\vec{u}}{t}+\rho\left(\vec{u}\cdot\vec{\nabla}\right)\vec{u}=\rho\vec{g}-\vec{\nabla}p+\vec{\nabla}\cdot\left\{ 2\mu\left[\left(\vec{\nabla}\vec{u}\right)^{S}-\frac{1}{3}\left(\vec{\nabla}\cdot\vec{u}\right)\mathbb{I}\right]\right\}
+	\end{equation}
+	
+	,que es la \textcolor{red}{ecuación de Navier-Stokes}.
+
+	
+	En la mayoría de los casos, se puede considerar que \textcolor{blue}{$\mu$
+		es uniforme}, de forma que, tras algunas operaciones tensoriales,
+	
+	\begin{equation}
+		\rho\,\dparc{\vec{u}}{t}+\rho\left(\vec{u}\cdot\vec{\nabla}\right)\vec{u}=\rho\vec{g}-\vec{\nabla}p+\mu\left[\triangle\vec{u}+\frac{1}{3}\vec{\nabla}\left(\vec{\nabla}\cdot\vec{u}\right)\right]
+	\end{equation}
+	
+	con 
+	
+	\begin{equation}
+		\laplace\equiv{\vec{\nabla}}^{2}=\dparcsec{\phantom{x}}{x}+\dparcsec{\phantom{y}}{y}+\dparcsec{\phantom{z}}{z}
+	\end{equation}
+	
+	
+	Si el \textcolor{blue}{flujo es incompresible}, $\vec{\nabla}\cdot\vec{u}=0$,
+	y la ecuación de Navier-Stokes queda como 
+	
+\begin{equation}
+		\boxed{\rho\,\dparc{\vec{u}}{t}+\rho\left(\vec{u}\cdot\vec{\nabla}\right)\vec{u}=\rho\vec{g}-\vec{\nabla}p+\mu\triangle\vec{u}}
+\end{equation}
+	
+	
+	En forma de componentes, 
+	
+	\begin{equation}
+		\rho\left(\dparc{u_{i}}{t}+u_{j}\dparc{u_{i}}{x_{j}}\right)=\rho g_{i}-\dparc{p}{x_{i}}+\mu\frac{\partial^{2}u_{i}}{\partial x_{j}\partial x_{j}}
+	\end{equation}
+	
+
+	
+
+		Si menospreciamos los efectos de la viscosidad (flujo inviscido),
+		tenemos la \textcolor{red}{Ecuación de Euler} 
+		\[
+		\rho\,\dparc{\vec{u}}{t}+\rho\left(\vec{u}\cdot\vec{\nabla}\right)\vec{u}=\rho\vec{g}-\vec{\nabla}p
+		\]
+
+	\subsection*{Actividad 1:}
+		Escribid las ecuaciones de la dinámica de un flujo laminar entre
+		dos placas paralelas, sin presión pero con viscosidad. La velocidad
+		tan sólo tiene componente $x$, y las placas son normales a la dirección
+		$y$. El flujo es estacionario. 
+		
+		¿Como cambian las ecuaciones si no hay viscosidad (Ecuación de Euler)?
+		
+\section{Ecuación integral de la conservación del momento cinético}
+
+	
+	Es posible aplicar la forma general de conservación de una magnitud
+	física al momento cinético.
+	
+	Recordemos que para una partícula, su momento cinético respecto de
+	un punto $O$ se define como 
+	\[
+	\vec{L}_{0}=\vec{r}_{0}\times m\vec{u}
+	\]
+	y la física de partículas dice que la derivada de esta magnitud es
+	igual a la suma de los momentos de las fuerzas que actúan sobre la
+	partícula 
+	\[
+	\deriv{\vec{L}_{0}}{t}=\sum\left(\vec{r}_{0}\times\vec{F}\right)={\vec{M}_{T}}
+	\]
+	
+
+	
+	Apliquemos esto a un Volumen de Control relacionado con un fluido.
+	Para un Sistema de Control, el momento cinético es 
+	
+	\begin{equation}
+		\vec{L}_{0}=\int_{\text{Sist C}}\left(\vec{r}_{0}\times\vec{u}\right)\rho\dif V
+	\end{equation}
+	
+	y, aplicando el teorema de transporte de Reynolds, con 
+	\[
+	F=\vec{r}_{0}\times m\vec{u}
+	\]
+	y 
+	\[
+	f=\vec{r}_{0}\times\vec{u},
+	\]
+	la variación de esta magnitud para un Volumen de Control, es 
+	
+	\begin{equation}
+		{\vec{M}_{T}}=\deriv{\vec{L}_{0}}{t}=\int_{VC}\dparc{\left(\vec{r}_{0}\times\rho\vec{u}\right)}{t}\dif V+\oint_{SC}\left(\vec{r}_{0}\times\vec{u}\right)\rho\vec{u}\cdot\dif\vec{S}
+	\end{equation}
+	
+	
+	
+	Es importante no olvidar, igual que en la conservación de la cantidad
+	de movimiento, el caracter vectorial de esta relación.
+	
+	Omitiendo el subíndice $0$, en componentes esta relación es 
+	\begin{eqnarray}
+		{M_{T}}_{x} & = & \int_{VC}\dparc{\rho\left(yw-zv\right)}{t}\dif V+\oint_{SC}\rho\left(yw-zv\right)\,\vec{u}\cdot\dif\vec{S}\\
+		{M_{T}}_{y} & = & \int_{VC}\dparc{\rho\left(zu-xw\right)}{t}\dif V+\oint_{SC}\rho\left(zu-xw\right)\,\vec{u}\cdot\dif\vec{S}\\
+		{M_{T}}_{x} & = & \int_{VC}\dparc{\rho\left(xv-yu\right)}{t}\dif V+\oint_{SC}\rho\left(xv-yu\right)\,\vec{u}\cdot\dif\vec{S}
+	\end{eqnarray}
+	
+	El momento total $\vec{M}_{T}$ es el producido por todas las fuerzas
+	externas, másicas y superficiales.
+
+
+\section{Cálculo de momentos en un VC}
+
+	
+	\begin{itemize}
+		\item \textbf{Sistema de referencia inercial}
+	\end{itemize}
+	Supongamos como caso más simple un Volumen de Control no deformable
+	y inercial, tal que todas las propiedades del fluido (densidad, velocidad,
+	posición,\ldots ) pueden ser consideradas uniformes en las secciones
+	de entrada y salida (es decir, el flujo puede ser considerado unidimensional). 
+	
+	En este caso, la conservación del momento cinético se expresa como
+	
+\begin{equation}
+		\vec{M}_{T}=\int_{VC}\dparc{\left(\vec{r}_{0}\times\rho\vec{u}\right)}{t}\dif V+\sum_{salidas}\left(\vec{r}\times\vec{u}\right)\dot{m}_{sal}-\sum_{entradas}\left(\vec{r}\times\vec{u}\right)\dot{m}_{ent}
+\end{equation}
+	
+	
+
+	
+	\subsection{Ejemplo 1:}
+		
+		\begin{center}
+			\includegraphics[width=0.5\linewidth]{TeX_files/chapter04-Dinamica/ejemplo1CMC}
+		\end{center}
+		
+		
+		Queremos calcular el momento sobre el punto A, usando el Volumen de
+		Control mostrado en la siguiente figura.
+		
+		\begin{center}
+			\includegraphics[width=0.5\linewidth]{TeX_files/chapter04-Dinamica/ejemplo1CMC1}
+		\end{center}
+		
+
+		Suponemos que las propiedades del fluido (velocidad, densidad, presión)
+		son uniformes en la entrada y en la salida, que el flujo es estacionario
+		y que el peso del fluido y la tubería son menospreciables, asi como
+		los efectos del rozamiento. Con estas hipótesis, la conservación del
+		momento cinético es 
+		\[
+		\vec{M}_{T}=\vec{M}_{A}+\left[\vec{r}_{1}\times\left(-p_{1}\vec{S}_{1}\right)\right]+\left[\vec{r}_{2}\times\left(-p_{2}\vec{S}_{2}\right)\right]
+		\]
+		
+		\[
+		=\left(\vec{r}_{2}\times\vec{u}_{2}\right)\dot{m}_{2}-\left(\vec{r}_{1}\times\vec{u}_{1}\right)\dot{m}_{1}
+		\]
+		$\vec{M}_{A}$ es el momento realizado por la tubería \textbf{sobre}
+		el fluido y transmitido a través del brazo al empotramiento en A.
+		
+		Dado que el flujo es unidimensional y los vectores de posición solo
+		tienen componentes en $x$ y en $y$, los momentos son en la dirección
+		$z$.
+
+		Los módulos de los momentos que hacen las presiones son 
+		\[
+		\begin{cases}
+			\left|\vec{r}_{1}\times\left(-p_{1}\vec{S}_{1}\right)\right| & =r_{1}p_{1}S_{1}\sin\theta_{1}=p_{1}S_{1}h_{1}\\
+			\left|\vec{r}_{2}\times\left(-p_{2}\vec{S}_{2}\right)\right| & =-r_{2}p_{2}S_{2}\sin\theta_{2}=-p_{2}S_{2}h_{2}
+		\end{cases}
+		\]
+		
+		La variación de momento cinético del fluido es 
+		\begin{align*}
+			\left(\vec{r}_{2}\times\vec{u}_{2}\right)\dot{m}_{2}-\left(\vec{r}_{1}\times\vec{u}_{1}\right)\dot{m}_{1}=\left(r_{2}u_{2}\sin\theta_{2}-r_{1}u_{1}\sin\theta_{1}\right)\dot{m}\\
+			\dot{m}=\left(h_{2}u_{2}-h_{1}u_{1}\right)
+		\end{align*}
+		
+		Combinando todo, obtenemos $M_{A}$, 
+		\[
+		M_{A}=\left(h_{2}u_{2}-h_{1}u_{1}\right)\dot{m}-p_{1}S_{1}h_{1}+p_{2}S_{2}h_{2}
+		\]
+		\[
+		=h_{2}\left(u_{2}\dot{m}+p_{2}S_{2}\right)-h_{1}\left(u_{1}\dot{m}+p_{1}S_{1}\right)
+		\]
+	
+	\subsection*{Ejemplo 2:}
+		Un irrigador por aspersion de radio $R$ da vueltas con una velocidad
+		angular $\vec{\omega}=\omega\vec{k}$ y expulsa un caudal $Q$ por
+		una tubería de sección $S$. El rozamiento sobre el eje es $\vec{M}_{r}=-M_{r}\vec{k}$.
+		Queremos encontrar en el equilibrio una expresión para $\omega$.
+		
+		\begin{center}
+			\includegraphics[width=0.5\linewidth]{TeX_files/chapter04-Dinamica/ejemplo2CMC}
+		\end{center}
+		
+	
+
+		Suponemos que el flujo es estacionario e incompresible, y que el peso
+		del fluido y del irrigador son menospreciables. Despreciamos tambien
+		los efectos de la fricción en el fluido. El brazo del irrigador no
+		es estacionario, pero \textbf{sí} lo es el VC, de forma que la velocidad
+		$u_{2}$ que pasa a través de la SC en la salida no es $u=\frac{Q}{S}$,
+		sino 
+		\[
+		u_{2}=u-\omega R
+		\]
+		
+		En el equilibrio, se cumple que 
+		\[
+		\vec{M}_{T}=-M_{r}\vec{k}=\left(\vec{r}_{2}\times\vec{u}_{2}\right)\dot{m}_{2}-\left(\vec{r}_{1}\times\vec{u}_{1}\right)\dot{m}_{1}
+		\]
+		Dado que $r_{1}=0$, tenemos $-M_{r}\vec{k}=\left(R\vec{\jmath}\times u_{2}\vec{\imath}\right)\dot{m}=-Ru_{2}\dot{m}\vec{k}$
+		\begin{align*}
+			M_{r}=\rho QR\left(u-\omega R\right)\\
+			\omega=\frac{u}{R}-\frac{M_{r}}{\rho QR^{2}}=\frac{Q}{RS}-\frac{M_{r}}{\rho QR^{2}}
+		\end{align*}
+
+	
+	\begin{itemize}
+		\item \textbf{Sistema de referencia no inercial}
+	\end{itemize}
+	La única diferencia es que hay que añadir a los momentos realizados
+	por las fuerzas externas, los momentos de las aceleraciones ficticias,
+	
+	\[
+	\vec{M}_{T}-\int_{VC}\rho\left(\vec{r}_{0}\times\vec{a}'\right)\dif V=\int_{VC}\dparc{\left(\vec{r}_{0}\times\rho\vec{u}\right)}{t}\dif V+\oint_{SC}\left(\vec{r}_{0}\times\vec{u}\right)\rho\vec{u}\cdot\dif\vec{S}
+	\]
+	donde, tal y como vimos en el tema de conservación de la cantidad
+	de movimiento, 
+	\[
+	\vec{a}'=\underbrace{\frac{\text{d}^{2}\vec{R}}{\text{d}t^{2}}}_{\text{ac. lineal del SR}}+\underbrace{\deriv{\vec{\Omega}}{t}\times\vec{r}}_{\text{ac. angular del SR}}+\underbrace{2\left(\vec{\Omega}\times\vec{u}\right)}_{\text{ac. de Coriolis}}+\underbrace{\vec{\Omega}\times\left(\vec{\Omega}\times\vec{r}\right)}_{\text{ac. centr\'ifuga}}
+	\]
+	
+	
+	\subsection*{Actividad 1:}
+		
+		Resolver el ejemplo 2, pero con un VC no inercial. 
+		
+		Ahora el VC rota solidario con el irrigador, con una velocidad angular
+		$\omega$. Se debe obtener el mismo resultado.
+
+\section{Las turbomáquinas hidráulicas}
+
+Esta sección puede ser complementada con el capitulo 11 del libro de
+White \cite{White2008}, o el 14 del de Çengel \cite{Cengel2014}. 
+
+
+\subsection{La conservación del momento cinético y las turbomáquinas hidráulicas}
+
+Las turbomáquinas hidráulicas se basan en la conservación del momento
+cinético para transferir energia entre la máquina y el fluido. Estas
+máquinas son: 
+\begin{itemize}
+	\item \textcolor{blue}{Bombas} (agua u otros líquidos) 
+	\item \textcolor{blue}{Ventiladores} (aire) 
+	\item \textcolor{blue}{Turbinas} (agua) 
+\end{itemize}
+En los dos primeros casos, la máquina transfiere momento cinético
+y, por lo tanto, potencia al fluido. En el tercer caso, es el fluido
+el que transfiere potencia a la máquina.
+
+En todas estas máquinas el fluido es considerado incompresible.
+
+Si el fluido es compresible, hablamos de \textbf{Turbomáquinas térmicas}
+(compresores y turbinas de vapor). No serán tratadas en este curso.
+
+Supongamos para simplificar la turbomáquina especificada en la figura.
+La parte móvil donde realmente se tranfiere la energía recibe el nombre
+de \textcolor{red}{rodete}. Está formado por una serie de \textcolor{red}{álabes}
+que dirigen el fluido desde el interior hacia el exterior (bombas
+y ventiladores centrífugos) o a la inversa (turbinas). En este caso,
+los álabes son rectos. 
+
+\begin{center}
+	\includegraphics[width=0.5\linewidth]{TeX_files/chapter04-Dinamica/rodete1}
+\end{center}
+
+El fluido entra en el VC con una velocidad $\vec{c}_{1}=\vec{w}_{1}+\vec{u}_{1}$
+y sale con una velocidad $\vec{c}_{2}=\vec{w}_{2}+\vec{u}_{2}$
+
+Para mantener este flujo, debemos ejercer un momento mecánico sobre
+el eje. Por la conservación del momento cinético, este momento será
+
+\[
+\vec{M}_{0}=\oint_{SC}\rho\left(\vec{r}\times\vec{c}\right)\vec{c}\cdot\dif\vec{S}=\rho Q\left[\left(\vec{r}_{2}\times\vec{c}_{2}\right)-\left(\vec{r}_{1}\times\vec{c}_{1}\right)\right]
+\]
+
+\[
+M_{0}=\rho Q\left(r_{2}u_{2}-r_{1}u_{1}\right)
+\]
+
+Dado que $u_{1}=\omega r_{1}$ y $u_{2}=\omega r_{2}$, tenemos 
+\[
+M_{0}=\rho Q\omega\left(r_{2}^{2}-r_{1}^{2}\right)
+\]
+y la potencia requerida para bombear este fluido será 
+\[
+P=M_{0}\omega=\rho Q\omega^{2}\left(r_{2}^{2}-r_{1}^{2}\right)
+\]
+
+
+\subsection*{Actividad 1:}
+	Realizar el cálculo de la potencia transmitida para un caudal de
+	120 l/min de agua, una velocidad angular de 1725 rpm, unos diámetros
+	del rodete de 15 cm y 25 cm y una anchura de rodete de 5 cm (constante).
+
+\subsection{El triángulo de velocidades y la ecuación de Euler}
+
+
+Las bombas, los ventiladores y las turbinas reales son algo más complicadas.
+En realidad los álabes no son rectos, excepto para algunos ventiladores.
+
+Centrándonos en el caso de las bombas centrífugas, los álabes suelen
+estar inclinados hacia atrás según el sentido de giro. 
+
+\begin{center}
+	\includegraphics[width=0.5\linewidth]{TeX_files/chapter04-Dinamica/rodete2}
+\end{center}
+
+
+\begin{center}
+	\includegraphics[width=0.5\linewidth]{TeX_files/chapter04-Dinamica/alabe1}
+\end{center}
+
+El momento cinético es transportado por la componente de la velocidad
+$\vec{c}$ perpendicular al radio, es decir, $c_{1u}$ en la entrada
+al VC y $c_{2u}$ en la salida. 
+
+\begin{equation}
+	M_{0}=\rho Q\left(r_{2}c_{2u}-r_{1}c_{1u}\right)
+\end{equation}
+
+
+
+Para calcular $c_{1u}$ y $c_{2u}$, se utilizan los \textcolor{red}{triángulos
+de velocidades} 
+
+\begin{center}
+	\includegraphics[width=0.7\linewidth]{TeX_files/chapter04-Dinamica/triangulo1}
+\end{center}
+
+
+
+\begin{equation}
+	c_{1u}=u_{1}-\frac{c_{1m}}{\tan\beta_{1}}\qquad c_{2u}=u_{2}-\frac{c_{2m}}{\tan\beta_{2}}
+\end{equation}
+$c_{1m}$ y $c_{2m}$ se calculan a partir del caudal, 
+
+\begin{equation}
+	c_{1m}=\frac{Q}{S_{1}}=\frac{Q}{2\pi r_{1}b_{1}}\qquad c_{2m}=\frac{Q}{S_{2}}=\frac{Q}{2\pi r_{2}b_{2}}
+\end{equation}
+
+donde $b_{1}$ y $b_{2}$ son al ancho del rodete en la entrada y
+en la salida.
+
+
+
+La potencia necesaria para bombear el fluido es 
+
+\begin{equation}
+	P=M_{0}\omega=\rho Q\omega\left(r_{2}c_{2u}-r_{1}c_{1u}\right)=\rho Q\left(u_{2}c_{2u}-u_{1}c_{1u}\right)
+\end{equation}
+
+y la energia, en forma de altura de fluido, que transmite el rodete
+al fluido es 
+
+\begin{equation}
+	\boxed{H_{t}=\frac{P}{\rho gQ}=\frac{1}{g}\left(u_{2}c_{2u}-u_{1}c_{1u}\right)}
+\end{equation}
+
+
+Esta es la \textcolor{red}{Ecuación de Euler} para Turbomáquinas,
+y el subíndice $t$ indica que la expresión es teórica, ya que hay
+muchos aspectos que no se han considerado: 
+\begin{itemize}
+	\item Número finito de álabes 
+	\item Rozamiento en el flujo a través del rodete 
+	\item Perfil de velocidad no uniforme en profundidad 
+\end{itemize}
+
+
+\subsection*{Actividad 2:}
+	Repetir los cálculos de la Actividad 1, pero ahora los álabes no
+	son rectos, sino que son tales que $\beta_{1}=35^{\circ}$ y $\beta_{2}=25^{\circ}$.
+	Calcular la energía teórica que da el rodete, en forma de altura de
+	fluido. 
+
+\section{Ecuación integral de la conservación de la energía}
+
+	
+	Primera ley de la termodinámica para un sistema cerrado: 
+	
+	\begin{equation}
+		\Deriv{E}{t}=\dot{Q}-\dot{W}
+	\end{equation}
+	
+	
+	\[
+	\begin{array}{cc}
+		\dot{Q} & \textrm{: calor transferido al sistema}\\
+		\dot{W} & \textrm{: trabajo realizado por el sistema}
+	\end{array}
+	\]
+	
+	Aplicando el teorema del transporte de Reynolds al sistema:
+	
+	\[
+	\Deriv{E}{t}=\int_{VC}\dparc{\rho e}{t}\text{d}V+\oint_{SC}\rho e\vec{u}\cdot\text{d}\vec{S}=\dot{Q}-\dot{W}
+	\]
+	
+	donde 
+	\[
+	e=\underbrace{\frac{1}{2}u^{2}}_{\text{E. cinética}}+\underbrace{\phantom{\frac{1}{2}}gz\phantom{\frac{1}{2}}}_{\text{E. potencial}}+\underbrace{\phantom{\frac{1}{2}}\underline{u}\phantom{\frac{1}{2}}}_{\text{E. interna}}
+	\]
+	es la energía por unidad de masa.
+
+
+\subsection{Análisis del trabajo}
+
+	
+
+	\begin{itemize}
+		\item trabajo realizado por los esfuerzos normales: 
+		\[
+		\dot{W}_{n}=-\int_{SC}\tau_{nn}\vec{u}\cdot\text{d}\vec{S}\approx\int_{SC}p\vec{u}\cdot\text{d}\vec{S}
+		\]
+		
+		\item trabajo realizado por los esfuerzos tangenciales: 
+		\[
+		\dot{W}_{t}=-\int_{SC}\vec{u}\cdot\underbrace{\left(\tens'\cdot\text{d}\vec{S}\right)}_{\vec{\tau}'\text{d}S}=-\int_{SC}\vec{u}\cdot\vec{\tau}'\text{d}S
+		\]
+		En general, se intenta escoger el $VC$ de forma que $\vec{u}\parallel\text{d}\vec{S}$,
+		y, dado que $\vec{\tau}'$ está en $\text{d}S$, $\vec{v}\perp\vec{\tau}'$,
+		y $\vec{v}\cdot\vec{\tau}'=0$ (flujos unidimensionales). 
+		\item realizado por otros elementos externos, como, p.e., trabajo eléctrico,
+		o trabajo mecánico de un eje (agitador, \ldots ). Lo expresamos como
+		$\dot{W}_{e}$.
+	\end{itemize}
+
+	
+	Para un Volumen de Control tal que $\vec{v}\Vert\text{d}\vec{S}$
+	en las entradas y salidas, tendremos
+	
+	\[
+	\dot{Q}-\dot{W}_{e}-\oint_{SC}p\vec{u}\cdot\text{d}\vec{S}=\int_{VC}\dparc{\rho e}{t}\text{d}V+\oint_{SC}\rho e\vec{u}\cdot\text{d}\vec{S}
+	\]
+	
+	\[
+	\Rightarrow\dot{Q}-\dot{W}_{e}=\int_{VC}\dparc{\rho e}{t}\text{d}V+\oint_{SC}\rho(e+\dfrac{p}{\rho})\vec{u}\cdot\text{d}\vec{S},
+	\]
+	
+	Dado que $\underline{u}+\dfrac{p}{\rho}=h$, la conservación de la
+	energía queda 
+	
+
+	\begin{equation}
+		\boxed{\dot{Q}-\dot{W}_{e}=\int_{VC}\dparc{\rho e}{t}\text{d}V+\oint_{SC}\rho\left(h+gz+\frac{1}{2}u^{2}\right)\vec{u}\cdot\text{d}\vec{S}}
+	\end{equation}
+	
+	
+	\subsection*{Actividad 1:}
+		¿Porqué no hemos incluido el trabajo realizado por la gravedad en
+		$\dot{W}$?
+
+\subsection*{Simplificaciones}
+	
+	\begin{itemize}
+		\item \textcolor{blue}{Flujo permanente :} 
+		\[
+		\dparc{\rho e}{t}=0
+		\]
+		en todo el Volumen de Control 
+		\item \textcolor{blue}{Propiedades constantes en las superficies de entrada
+			(1) y de salida (2) (con flujo unidimensional)}: 
+		\[
+		\oint_{SC}\rho\left(h+gz+\frac{1}{2}u^{2}\right)\vec{u}\cdot\text{d}\vec{S}=
+		\]
+		\[
+		\rho_{2}\left[h_{2}+gz_{2}+\frac{1}{2}u_{2}^{2}\right]u_{2}S_{2}-\rho_{1}\left[h_{1}+gz_{1}+\frac{1}{2}u_{1}^{2}\right]u_{1}S_{1}
+		\]
+		\[
+		\boxed{\dot{Q}-\dot{W}_{e}=\rho_{2}\left[h_{2}+gz_{2}+\frac{1}{2}u_{2}^{2}\right]u_{2}S_{2}-\rho_{1}\left[h_{1}+gz_{1}+\frac{1}{2}u_{1}^{2}\right]u_{1}S_{1}}
+		\]
+	\end{itemize}
+
+\subsection{Ecuación de Bernoulli}
+
+	
+	Flujo \textcolor{blue}{permanente},\textcolor{blue}{incompresible}
+	y \textcolor{blue}{no viscoso}. $\dot{Q}=\dot{W}=0$
+	
+	\[
+	\Rightarrow\rho_{2}\left[h_{2}+gz_{2}+\frac{1}{2}u_{2}^{2}\right]u_{2}S_{2}=\rho_{1}\left[h_{1}+gz_{1}+\frac{1}{2}u_{1}^{2}\right]u_{1}S_{1}
+	\]
+	
+	Dado que $\rho_{2}u_{2}S_{2}=\rho_{1}u_{1}S_{1}=\dot{m}$, tenemos
+	\[
+	h_{2}+gz_{2}+\frac{1}{2}u_{2}^{2}=h_{1}+gz_{1}+\frac{1}{2}u_{1}^{2}
+	\]
+	
+	Si suponemos también que no hay cambios en la energía interna, 
+	\[
+	\frac{p_{2}}{\rho}+gz_{2}+\frac{1}{2}u_{2}^{2}=\frac{p_{1}}{\rho}+gz_{1}+\frac{1}{2}u_{1}^{2},
+	\]
+	es decir, 
+	
+	\begin{equation}
+		\frac{p}{\rho}+gz+\frac{1}{2}u^{2}=cte\quad\text{sobre una línea de corriente}
+	\end{equation}
+	
+	
+	Este es la conocida como \textcolor{red}{Ecuación de Bernoulli}.
+
+
+
+	
+	\subsection*{Actividad 2:}
+		Una pareja que vive en una casa en la montaña decide aprovechar el
+		arroyo de cerca de su casa para generar la energia necesaria para
+		su vivienda. Compran una turbina en eBay y estiman que poniendo una
+		presa podrían conseguir una altura en la entrada de la turbina de
+		unos 4 metros. El caudal del arroyo es de unos 800 litros por segundo.
+		Si en la salida de la turbina la velocidad del agua será de 3,6 m/s,
+		estimad la potencia que podrían generar, menospreciando pérdidas por
+		rozamiento.
+
+
+\section{Ecuación diferencial de la conservación de la energía}
+
+	
+	$\vec{g}$ : fuerzas másicas
+	
+	Partiendo de la forma general de la conservación de la energia en
+	un VC 
+	\[
+	\dot{Q}+\int_{VC}\vec{g}\cdot\vec{u}\rho\,\dif V+\oint_{SC}\vec{u}\cdot\left(\tens\cdot\dif\vec{S}\right)=\int_{VC}\dparc{\rho e}{t}\,\dif V+\oint_{SC}\rho e\vec{u}\cdot\dif\vec{S}
+	\]
+	donde $\tens$ incluye la diagonal y $e$ no incluye el término $gz$ 
+	
+	
+	$\dot{Q}$ puede ser debido o bien a un flujo de calor ($\vec{q}$)
+	a través de la $SC$ o bien a una producción de energía en el interior
+	del $VC$ ($s$, que tiene unidades de W/kg). 
+	\[
+	\dot{Q=}-\oint_{SC}\vec{q}\cdot\dif\vec{S}+\int_{VC}s\rho\,\dif V
+	\]
+	
+
+	
+	Usando el Teorema de Gauss sobre las tres $SC$, queda 
+	\begin{eqnarray*}
+		-\int_{VC}\vec{\nabla}\vec{q}\dif V+\int_{VC}s\rho\,\dif V+\int_{VC}\vec{g}\cdot\vec{u}\rho\,\dif V+\int_{VC}\vec{\nabla}\left(\tens\cdot\vec{u}\right)\dif V=\\
+		=\int_{VC}\dparc{\rho e}{t}\,\dif V+\int_{VC}\vec{\nabla}\cdot\left(\rho e\vec{u}\right)\dif V
+	\end{eqnarray*}
+	
+	Si lo reescribimos en forma de componentes, usando el convenio de
+	doble índice, y en una sola integral, obtenemos 
+	\[
+	\int_{VC}\left[-\dparc{q_{i}}{x_{i}}+\rho s+\rho g_{i}u_{i}+\dparc{\tau_{ij}u_{i}}{x_{j}}-\dparc{e\rho u_{i}}{x_{i}}+\dparc{\rho e}{t}\right]\dif V=0
+	\]
+	Dado que esto ha de ser cierto para todo $VC$, el integrando debe
+	ser nulo, 
+	\[
+	-\dparc{q_{i}}{x_{i}}+\rho s+\rho g_{i}u_{i}+\dparc{\tau_{ij}u_{i}}{x_{j}}-\dparc{e\rho u_{i}}{x_{i}}+\dparc{\rho e}{t}=0
+	\]
+	
+
+	
+	Para simplificar esta expresión expandimos en primer lugar todas las
+	derivadas, usando $e=\underline{u}+\frac{1}{2}u^{2}$. 
+	\[
+	-\dparc{q_{i}}{x_{i}}+\rho s+\rho g_{i}u_{i}+\tau_{ij}\dparc{u_{i}}{x_{j}}+u_{i}\dparc{\tau_{ij}}{x_{j}}=
+	\]
+	\[
+	=\rho u_{i}\dparc{}{x_{i}}\left(\frac{u^{2}}{2}\right)+\frac{u^{2}}{2}\dparc{}{x_{i}}\left(\rho u_{i}\right)+\underline{u}\rho\dparc{u_{i}}{x_{i}}+\underline{u}u_{i}\dparc{\rho}{x_{i}}+\rho u_{i}\dparc{\underline{u}}{x_{i}}+
+	\]
+	\[
+	+\rho\dparc{\phantom{}}{t}\left(\frac{u^{2}}{2}\right)+\left(\frac{u^{2}}{2}\right)\dparc{\rho}{t}+\underline{u}\dparc{\rho}{t}+\rho\dparc{\underline{u}}{t}
+	\]
+	
+
+	
+	Reordenando términos, tenemos 
+	\[
+	\underbrace{u_{i}\underbrace{\left[\dparc{\tau_{ij}}{x_{j}}+\rho g_{i}\right]}_{\rho\Deriv{u_{i}}{t}}}_{=\frac{\rho}{2}\Deriv{u^{2}}{t}}+\tau_{ij}\dparc{u_{i}}{x_{j}}-\dparc{q_{i}}{x_{i}}+\rho s=
+	\]
+	
+	\[
+	=\frac{\rho}{2}\underbrace{\left[\dparc{u^{2}}{t}+u_{i}\dparc{u^{2}}{x_{i}}\right]}_{=\Deriv{u^{2}}{t}}+\frac{u^{2}}{2}\underbrace{\left[\dparc{\rho u_{i}}{x_{i}}+\dparc{\rho}{t}\right]}_{=0}+\rho\underbrace{\left[\dparc{\underline{u}}{t}+v_{i}\dparc{\underline{u}}{x_{i}}\right]}_{\Deriv{\underline{u}}{t}}+
+	\]
+	
+	\[
+	+\underline{u}\underbrace{\left[\dparc{\rho}{t}+u_{i}\dparc{\rho}{x_{i}}\right]}_{\Deriv{\rho}{t}}+\underline{u}\rho\dparc{u_{i}}{x_{i}}
+	\]
+	
+	
+	\ldots{} y simplificando, 
+	\[
+	\tau_{ij}\dparc{u_{i}}{x_{j}}-\dparc{q_{i}}{x_{i}}+\rho s=\rho\Deriv{\underline{u}}{t}+\underline{u}\underbrace{\left[\Deriv{\rho}{t}+\rho\dparc{u_{i}}{x_{i}}\right]}_{=0}
+	\]
+	
+	
+	
+	\begin{equation}
+		\boxed{\tau_{ij}\dparc{u_{i}}{x_{j}}-\dparc{q_{i}}{x_{i}}+\rho s=\rho\Deriv{\underline{u}}{t}}
+	\end{equation}
+	
+	
+	
+	Si ahora usamos la ley de Fourier 
+	\[
+	q_{i}=-k\dparc{T}{x_{i}}
+	\]
+	y la descomposición $\tau_{ij}=-p\delta_{ij}+\tau'_{ij}$, como hicimos
+	con la conservación de cantidad de movimiento, 
+	\[
+	-p\dparc{u_{i}}{x_{j}}\delta_{ij}+\underbrace{\tau'_{ij}\dparc{u_{i}}{x_{j}}}_{\text{función disipación }\Phi}+\dparc{\phantom{}}{x_{i}}\left(k\dparc{T}{x_{i}}\right)+\rho s=\rho\Deriv{\underline{u}}{t}
+	\]
+	
+	\begin{equation}
+		\rho\Deriv{\underline{u}}{t}=\rho\left(\dparc{\underline{u}}{t}+u_{i}\dparc{\underline{u}}{x_{i}}\right)=-p\dparc{u_{i}}{x_{i}}+\Phi+\rho s+\dparc{\phantom{}}{x_{i}}\left(k\dparc{T}{x_{i}}\right)
+	\end{equation}
+	
+	
+	Para un fluido newtoniano, 
+	\[
+	\Phi=\mu\sum_{ij}\left(\dparc{u_{i}}{x_{j}}+\dparc{u_{j}}{x_{i}}\right)^{2}
+	\]
+
+\section{Derivación de la Ecuación de Bernoulli a partir de la Ecuación de Euler}
+	
+	Integramos la Ecuación de Euler 
+	\[
+	\rho\,\dparc{\vec{u}}{t}+\rho\left(\vec{u}\cdot\vec{\nabla}\right)\vec{u}=\rho\vec{g}-\vec{\nabla}p
+	\]
+	sobre una línea de corriente. La coordenada $s$ es la posición sobre
+	la línea, y, dado que la velocidad debe ser tangente a la línea de
+	corriente, sólo hay una ecuación de Euler para el módulo de $\vec{u}$,
+	\[
+	\dparc{u}{t}+u\dparc{u}{s}=-\frac{1}{\rho}\dparc{p}{s}-g\dparc{z}{s}
+	\]
+	
+	Consideremos flujo estacionario, 
+	\[
+	u\dparc{u}{s}=-\frac{1}{\rho}\dparc{p}{s}-g\dparc{z}{s}
+	\]
+	
+	
+	Si una partícula de fluido se mueve una distancia $\dif s$ sobre
+	la línea de corriente, tendremos 
+	\begin{eqnarray*}
+		\dparc{u}{s}\dif s & = & \dif u\\
+		\dparc{p}{s}\dif s & = & \dif p\\
+		\dparc{z}{s}\dif s & = & \dif z
+	\end{eqnarray*}
+	de forma que 
+	\[
+	u\dif u=-\frac{1}{\rho}\dif p-g\dif z\;\Rightarrow\;u\dif u+\frac{1}{\rho}\dif p+g\dif z=0
+	\]
+	\[
+	\Rightarrow\;\frac{1}{2}u^{2}+\int\frac{\dif p}{\rho}+gz=\text{cte}
+	\]
+	y, si el fluido es incompresible, obtenemos la ecuación de Bernoulli
+	\[
+	\boxed{\frac{1}{2}u^{2}+\frac{p}{\rho}+gz=\text{cte}}
+	\]
+	
+
+
+\section{Presión estática, dinámica y de remanso}
+
+	
+	Un \textcolor{red}{tubo de Pitot} es una sonda de diámetro muy pequeño,
+	que se usa para medir la velocidad de un flujo. En la figura se muestra
+	una en ángulo recto, usada para medir la velocidad en un canal. 
+	
+\begin{center}
+	\includegraphics[width=0.5\linewidth]{TeX_files/chapter04-Dinamica/pitot1}
+\end{center}
+
+	
+	
+	El fluido penetra en la sonda y sube por el tubo hasta una altura
+	$h$ por encima del nivel del canal. Esta altura es tal que la presión
+	que crea en la boca del tubo contrarresta la energia que lleva el
+	fluido. El punto 2, justo delante de la boca del tubo, recibe el nombre
+	de \textcolor{green}{punto de estancamiento o de remanso}. En este
+	punto, la velocidad del fluido es nula. El punto 1 está lo suficientemente
+	lejos como para considerar que no está afectado por la sonda.
+	
+	Un tubo de Pitot mide la presión en el punto 2, es decir, la \textcolor{red}{presión
+		de remanso} o \textcolor{red}{presión total}.
+	
+	Si aplicamos Bernoulli entre los puntos 1 y 2, que están en la misma
+	línea de corriente, 
+	\[
+	\rho\,\frac{v_{1}^{2}}{2}+p_{1}=p_{2}=\rho g(H+h)
+	\]
+	
+	Dado que $p_{1}=\rho gH$, obtenemos, de forma muy sencilla, 
+	\[
+	\frac{v_{1}^{2}}{2}=gh\;\Rightarrow\;v_{1}=v=\sqrt{2gh}
+	\]
+	
+La presión total se compone de \textcolor{red}{presión estática} $p$
+y \textcolor{red}{presión dinámica} $\frac{\rho v^{2}}{2}$. 
+
+Con un tubo de Pitot podemos medir la presión dinámica y, por tanto,
+la velocidad, si conocemos la presión estática (como era el caso del
+canal abierto). 
+
+Si no es el caso, utilizamos un \textcolor{green}{tubo de Pitot estático}
+o \textcolor{green}{tubo de Prandtl}.
+
+\begin{tabular}{cc}
+	\begin{minipage}[c]{0.4\textwidth}%
+		\begin{center}
+			\includegraphics[width=0.7\linewidth]{TeX_files/chapter04-Dinamica/pitot2}
+		\end{center}
+		
+		\[
+		v=\sqrt{\frac{2(p_{A}-p_{B})}{\rho}}
+		\]
+		%
+	\end{minipage} & %
+	\begin{minipage}[c]{0.4\textwidth}%
+		\includegraphics[clip,width=0.8\textwidth,angle=270]{TeX_files/chapter04-Dinamica/prandtl} %
+	\end{minipage}\tabularnewline
+\end{tabular}
+\subsection{Tubo de Venturi}
+	
+	\begin{tabular}{cc}
+		\begin{minipage}[c]{0.4\textwidth}%
+			\begin{center}
+				\includegraphics[width=\linewidth]{TeX_files/chapter04-Dinamica/venturi}
+			\end{center}
+		\end{minipage} & %
+		\begin{minipage}[c]{0.4\textwidth}%
+			
+			\begin{align*}
+				\frac{1}{2}\rho u_{1}^{2}+p_{1}+\rho gh=\frac{1}{2}\rho u_{2}^{2}+p_{2}\\
+				\Rightarrow\frac{1}{2}\left(u_{2}^{2}-u_{1}^{2}\right)=\Delta p+\rho gh
+			\end{align*}
+			
+			\[
+			u_{1}=u_{2}\left(\frac{D_{2}}{D_{1}}\right)^{2}=u_{2}\beta^{2}
+			\]
+			
+			\begin{align*}
+				\frac{1}{2}\rho\left[1-\beta^{4}\right]u_{2}^{2}=\Delta p+\rho gh\\
+				\Rightarrow\quad u_{2}=\sqrt{\frac{2\left(\Delta p+\rho gh\right)}{\rho\left[1-\beta^{4}\right]}}
+			\end{align*}
+			%
+		\end{minipage}\tabularnewline
+	\end{tabular}
+
+	
+	El caudal es $Q=u_{2}S_{2}$ . Éste caudal es teórico. El real se
+	calcula multiplicando por un \textcolor{red}{coeficiente de descarga}
+	$C_{d}$ que se obtiene por calibración. Normalmente $C_{d}\approx0.95\div1.0$.
+	
+	El caudal es, entonces, 
+	\[
+	Q_{r}=u_{2r}S_{2}=C_{d}S_{2}\sqrt{\frac{2\left(\Delta p+\rho gh\right)}{\rho\left[1-\beta^{4}\right]}}
+	\]
+	
+	\subsection*{Actividad 1:}
+		En un tubo de Venturi, de diámetros 200 mm y 160 mm, instalado horizontalmente,
+		se mide una diferencia de presión de 25 mm de mercurio en una instalación
+		de agua. ¿Cuál és el caudal teórico de agua que circula?
+
+\subsection{Diafragma}
+	
+	La idea del diafragma es la misma que la del tubo de Venturi, pero
+	carece de la sección de ampliación de la sección corriente abajo.
+	Esto hace que el dispositivo sea más barato, y el montaje más sencillo.
+	
+	La ecuación para el caudal es la misma que para el tubo de Venturi,
+	pero $C_{d}$ es generalmente menor. 
+	
+\begin{center}
+	\includegraphics[width=0.7\linewidth]{TeX_files/chapter04-Dinamica/diafragma}
+\end{center}
+
+	
+
+
+\subsection{Vaciado de un depósito}
+	
+	\begin{tabular}{cc}
+		\begin{minipage}[c]{0.4\textwidth}%
+			\begin{center}
+				\includegraphics[width=\linewidth]{TeX_files/chapter04-Dinamica/deposito}
+			\end{center}
+		\end{minipage} & %
+		\begin{minipage}[c]{0.5\textwidth}%
+			Menospreciando la viscosidad, 
+			\[
+			\frac{1}{2}\rho u_{1}^{2}+p_{1}+\rho gH=\frac{1}{2}\rho u_{2}^{2}+p_{2}.
+			\]
+			
+			Dado que tanto el punto 1 como el 2 están abiertos, $p_{1}=p_{2}=0$.
+			Por otro lado, si suponemos que $S_{1}\gg S_{2}$, entonces $u_{1}^{2}\approx0$,
+			\[
+			\rho gH=\frac{1}{2}\rho u_{2}^{2}\;\Rightarrow\;\underbrace{u_{2}=\sqrt{2gH}}_{\text{Ec. de Torricelli}},
+			\]
+			y 
+			\[
+			Q_{t}=u_{2}S_{2}\sqrt{2gH}\qquad\text{(teórico)}
+			\]
+			%
+		\end{minipage}\tabularnewline
+	\end{tabular}
+	
+	\begin{tabular}{l>{\raggedright}p{0.7\textwidth}}
+		\begin{minipage}[c]{0.4\textwidth}%
+			\begin{center}
+				\includegraphics[width=\linewidth]{TeX_files/chapter04-Dinamica/orificio}
+			\end{center}
+		\end{minipage} & %
+		\begin{minipage}[c]{0.6\textwidth}%
+			Si la descarga se realiza a través de un orificio, se produce una
+			vena contracta de forma que $S_{c}\lessapprox S_{2}$. 
+			\[
+			S_{c}=C_{c}S_{2}
+			\]
+			$C_{c}$ : \textcolor{blue}{Coeficiente de contracción} $\lessapprox1.0$
+			
+			Por otro lado, debido al rozamiento, la velocidad disminuye, 
+			\[
+			u_{c}=C_{v}u_{2}
+			\]
+			$C_{v}$ : \textcolor{blue}{Coeficiente de velocidad} $\lessapprox1.0$
+			
+			\begin{align*}
+				Q=u_{c}S_{c}=C_{c}C_{v}S_{2}\sqrt{2gH}\\
+				=C_{d}S_{2}\sqrt{2gH}
+			\end{align*}
+			$C_{d}$ : \textcolor{blue}{Coeficiente de descarga} %
+		\end{minipage}\tabularnewline
+	\end{tabular}
+
+	
+	\subsection*{Ejemplo: Cálculo de tiempo de vaciado de un depósito.}
+		\[
+		Q=C_{d}S_{2}\sqrt{\frac{2gH}{1-\left(\frac{S_{2}}{S_{1}}\right)^{2}}}=\frac{C_{d}S_{2}}{\sqrt{1-\left(\frac{S_{2}}{S_{1}}\right)^{2}}}\sqrt{2gH}
+		\]
+		\[
+		u_{1}=\frac{Q}{S_{1}}=\frac{C_{d}\frac{S_{2}}{S_{1}}}{\sqrt{1-\left(\frac{S_{2}}{S_{1}}\right)^{2}}}\sqrt{2gH}=\underbrace{\frac{C_{d}\sqrt{2g}}{\sqrt{\left(\frac{S_{1}}{S_{2}}\right)^{2}-1}}}_{\alpha}\sqrt{H}
+		\]
+		\[
+		u_{1}=-\deriv{H}{t}=\alpha H^{1/2}\Rightarrow\frac{\dif H}{H^{1/2}}=-\alpha\dif t\Rightarrow\int_{H_{0}}^{0}H^{-1/2}\dif H=-\alpha\int_{0}^{t}\dif t
+		\]
+		\[
+		2\left.H^{1/2}\right]_{H_{0}}^{0}=-\alpha t\;\Rightarrow\;t=\frac{2}{\alpha}\sqrt{H}=\frac{2\sqrt{\left(\frac{S_{1}}{S_{2}}\right)^{2}-1}}{C_{d}\sqrt{2g}}\sqrt{H}
+		\]
+
+	
+	\subsection*{Actividad 2:}
+		Estima el tiempo que tarda en vaciarse una botella de agua de 1.5
+		litros puesta boca abajo. ¿Porqué en realidad tarda mucho más?
+
+	
+	\subsection*{Actividad 3:}
+		¿Cómo se modifican los cálculos si el depósito no es cilindrico (p.e.,
+		un embudo)?
+
+	
+>>>>>>> 798d2295a9f1296a5df84711ea80dbb1430ed68f

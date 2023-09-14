@@ -1,0 +1,76 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: MecFluidosRCastillaUPC.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: ./TeX_files/chapter01-Introduccion/chapter01-Introduccion.aux
+A level-1 auxiliary file: ./TeX_files/chapter02-Hidrostatica/chapter02-Hidrostatica.aux
+A level-1 auxiliary file: ./TeX_files/chapter03-Cinematica/chapter03-Cinematica.aux
+A level-1 auxiliary file: ./TeX_files/chapter04-Dinamica/chapter04-Dinamica.aux
+A level-1 auxiliary file: ./TeX_files/chapter05-FlujoViscoco/chapter05-FlujoViscoso.aux
+A level-1 auxiliary file: ./TeX_files/chapter06-ADimensional/chapter06-ADimensional.aux
+A level-1 auxiliary file: ./TeX_files/chapter07-Turbulencia/chapter07-Turbulencia.aux
+A level-1 auxiliary file: ./TeX_files/chapter08-CapaLimite/chapter08-CapaLimite.aux
+A level-1 auxiliary file: ./TeX_files/chapter09-Externo/chapter09-Externo.aux
+A level-1 auxiliary file: ./TeX_files/chapter10-Tuberias/chapter10-Tuberias.aux
+A level-1 auxiliary file: ./TeX_files/chapter11-Compresible/chapter11-Compresible.aux
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: MecFluidosRCastillaUPC-blx.bib
+Database file #2: MFBooks.bib
+Biblatex version: 3.17
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 11 entries,
+            6399 wiz_defined-function locations,
+            1284 strings with 11398 characters,
+and the built_in function-call counts, 76773 in all, are:
+= -- 6215
+> -- 1219
+< -- 490
++ -- 1731
+- -- 344
+* -- 5268
+:= -- 7763
+add.period$ -- 0
+call.type$ -- 11
+change.case$ -- 331
+chr.to.int$ -- 42
+cite$ -- 20
+duplicate$ -- 7049
+empty$ -- 7005
+format.name$ -- 581
+if$ -- 16362
+int.to.chr$ -- 0
+int.to.str$ -- 34
+missing$ -- 0
+newline$ -- 307
+num.names$ -- 681
+pop$ -- 3498
+preamble$ -- 1
+purify$ -- 366
+quote$ -- 0
+skip$ -- 2411
+stack$ -- 0
+substring$ -- 11711
+swap$ -- 1556
+text.length$ -- 290
+text.prefix$ -- 10
+top$ -- 1
+type$ -- 362
+warning$ -- 0
+while$ -- 817
+width$ -- 0
+write$ -- 297

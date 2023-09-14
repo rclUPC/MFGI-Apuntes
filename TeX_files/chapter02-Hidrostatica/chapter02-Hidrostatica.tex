@@ -363,7 +363,7 @@ de la presa.
 	\emph{Todo cuerpo sumergido, completa o parcialmente,
 		en un fluido experimenta
 		un empuje dirigido verticalmente hacia arriba, con magnitud igual al peso del
-		fluido desalojado y cuya  linea de acci\'on pasa por el centro de gravedad
+		fluido desalojado y cuya  linea de acción pasa por el centro de gravedad
 		del fluido desalojado}
 %\end{quotation} %
 }}
@@ -375,8 +375,8 @@ de la presa.
 	\end{center}
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
-	Las lineas de acci\'on de las fuerzas de empuje y el peso no
-	tienen porqu\'e coincidir, y, en este caso, se producen pares de fuerzas.
+	Las lineas de acción de las fuerzas de empuje y el peso no
+	tienen porqué coincidir, y, en este caso, se producen pares de fuerzas.
 	\begin{description}
 		\item[\textcolor{blue}{carena}] volumen del fluido desalojado
 		\item[\textcolor{blue}{centro
@@ -395,9 +395,9 @@ de la presa.
 \section{Segunda ley de Arquímedes}
 
 
-	La segunda ley de Arqu\'imedes dice que \emph{un cuerpo que flota desaloja su propio peso de fluido}. 
+	La segunda ley de Arquímedes dice que \emph{un cuerpo que flota desaloja su propio peso de fluido}. 
 	
-	Se puede comprender observando que en la figura, el recipiente con solo fluido y el que tiene fluido y cuerpo flotando, \textbf{deben pesar lo mismo}. Pregunta: ?`C\'omo sabemos que pesan lo mismo?
+	Se puede comprender observando que en la figura, el recipiente con solo fluido y el que tiene fluido y cuerpo flotando, \textbf{deben pesar lo mismo}. Pregunta: ?`Cómo sabemos que pesan lo mismo?
 
 
 	\begin{center}
@@ -419,7 +419,7 @@ Para un cuerpo sumergido, el centro de gravedad puede ser diferente del centro d
 %\end{center}
 
 
-Para un cuerpo flotante, es m\'as complicado, ya que la posici\'on del centro de empuje var\'ia
+Para un cuerpo flotante, es más complicado, ya que la posición del centro de empuje varía
 
 
 Equilibrio estable 
@@ -435,15 +435,15 @@ Equilibrio inestable
 \end{center}
 
 
-Pasos para calcular la estabilidad de un cuerpo flotante, consideremos un cuerpo sim\'etrico:
+Pasos para calcular la estabilidad de un cuerpo flotante, consideremos un cuerpo simétrico:
 
-1.- Se calcula posici\'on de equilibrio inicial, mediante las fuerzas $\vec F_E$ y $\vec W$, y sus puntos de aplicaci\'on, $E$ y $G$. Como el cuerpo estan en equilibrio, estas fuerza se alinean con el eje de simetria.
+1.- Se calcula posición de equilibrio inicial, mediante las fuerzas $\vec F_E$ y $\vec W$, y sus puntos de aplicación, $E$ y $G$. Como el cuerpo estan en equilibrio, estas fuerza se alinean con el eje de simetria.
 
-2.- Se realiza una peque\~na perturbaci\'on $\Delta \theta$. El centro de empuje se desplaza a una nueva posici\'on $E'$. La vertical sobre $E'$ corta el eje de simetria en un punto $M$, denominado \textbf{metacentro}. Si el \'angulo $\Delta \theta$ es peque\~no, el metacentro no depender\'a de \'el.
+2.- Se realiza una peque\~na perturbación $\Delta \theta$. El centro de empuje se desplaza a una nueva posición $E'$. La vertical sobre $E'$ corta el eje de simetria en un punto $M$, denominado \textbf{metacentro}. Si el ángulo $\Delta \theta$ es peque\~no, el metacentro no dependerá de él.
 
-3.- Se calcula la \textbf{altura metac\'entrica}, que es la distancia de $M$ a $G$. Si $M$ est\'a por encima de $G$, la altura metac\'entrica  es positiva, y la posici\'on es \emph{estable}. Si est\'a por debajo, la altura metac\'entrica es negativa, y la posici\'on es \emph{inestable}.
+3.- Se calcula la \textbf{altura metacéntrica}, que es la distancia de $M$ a $G$. Si $M$ está por encima de $G$, la altura metacéntrica  es positiva, y la posición es \emph{estable}. Si está por debajo, la altura metacéntrica es negativa, y la posición es \emph{inestable}.
 
-La altua metac\'entrica es una caracter\'istica de la secci\'on transversal del cuerpo y su distribuci\'on de masa.
+La altua metacéntrica es una característica de la sección transversal del cuerpo y su distribución de masa.
 
 \begin{center}
 	\includegraphics[width=0.7\linewidth]{TeX_files/chapter02-Hidrostatica/estabilidad4}
@@ -456,7 +456,7 @@ La altua metac\'entrica es una caracter\'istica de la secci\'on transversal del 
 
 
 
-	La posici\'on del nuevo centro de empuje se calcula con la estimación del centro de masas:
+	La posición del nuevo centro de empuje se calcula con la estimación del centro de masas:
 
 \begin{align*}
 	\overline{x}V_{aObdea} &= \int_{Obd}x \dif V - \int_{cOa} x \dif V
@@ -471,7 +471,7 @@ La altua metac\'entrica es una caracter\'istica de la secci\'on transversal del 
 \end{align*}
 
 
-La altura metac\'entrica es
+La altura metacéntrica es
 
 \begin{equation}
 	\overline{MG} = \overline{ME}-\overline{GE}= \frac{\overline{x}}{\tan \theta} - \overline{GE} 
@@ -480,3 +480,148 @@ La altura metac\'entrica es
 
 Si $\overline{MG}$ es positiva, el equilibrio es estable (para peque\~nas perturbaciones). Si 
 $\overline{GE}$ es negativa, el equilibrio es estable siempre
+
+\section[Presiones con aceleración]{Distribución de presiones en movimiento acelerado de Fluido como sólido rígido}
+
+\subsection{Introducción. Equilibrio de una partícula}
+
+En el caso general de un fluido que se mueve con una aceleración $\vec{a}$, la ecuación de la dinámica, bajo una distribución de presiones y la gravedad es
+\begin{equation}
+	\rho \vec a = -\vec \nabla p+ \rho \vec g,
+\end{equation} 
+suponiendo que no existen movimientos relativos entre las moléculas del fluido, de forma no existen esfuerzos tangenciales. Es decir, que el fluido se mueve en su totalidad como un \textbf{sólido rígido}.
+
+En estas condiciones, la distribución de presiones se puede obtener con 
+\begin{equation}
+	\vec \nabla p = \rho (\vec g-\vec a)
+	\label{ec:principal}
+\end{equation} 
+
+
+El movimiento más general de una partícula es una combinación de traslación más rotación respecto de un cierto punto $O$
+\begin{equation}
+	\vec v = \vec v_0 + \vec \Omega \times \vec v_0
+\end{equation} 
+
+\begin{equation}
+	\Rightarrow \vec a = \underbrace{\deriv{\vec v_0}{t}}_{\textrm{ac. lineal}} + \underbrace{\vec \Omega \times \left( \vec \Omega \times \vec r_0\right)}_{\textrm{ac. centrípeta}} + \underbrace{\deriv{\vec \Omega}{t} \times \vec r_0}_{\textrm{ac. rotacional}}
+	\label{ec:SR}
+\end{equation} 
+
+\begin{center}
+	\includegraphics[width=0.7\linewidth]{TeX_files/chapter02-Hidrostatica/sistema}
+\end{center}
+
+
+\subsection{Aceleración lineal}
+
+Supongamos que la aceleración se encuentra en el plano $yz$. La ecuación \ref{ec:principal} es un sistema de dos ecuaciones, una para cada dirección:
+\begin{eqnarray}
+	\dparc{p}{x} &=& -\rho a_x \\
+	\dparc{p}{z} &=& -\rho g - \rho a_z
+\end{eqnarray} 
+
+\begin{center}
+	\includegraphics[width=0.7\columnwidth]{TeX_files/chapter02-Hidrostatica/ac_lineal1}
+	% ac_lineal1.png: 355x237 pixel, 72dpi, 12.52x8.36 cm, bb=0 0 355 237
+\end{center}
+
+La primera ecuación da
+\begin{equation}
+	p = -\rho a_x x + f(z)
+\end{equation} 
+Derivando respecto de $z$ e igualando con la segunda ecuación obtenemos
+\begin{equation}
+	f'(z) = -\rho g - \rho a_z
+\end{equation}
+que, al integrarla, da
+\begin{equation}
+	f(z) = -\rho(g+a_z)z + C,
+\end{equation}  
+de forma que 
+\begin{equation}
+	\boxed{ p = -\rho a_x x -\rho(g+a_z)z + C}
+\end{equation} 
+
+\subsection*{Actividad 4:} ?`Cuánto vale la pendiente de las lineas de presión constante?
+
+\subsection*{Actividad 5:} Si un fluido tiene tan sólo aceleración vertical, ?`cómo es la distribución de presiones? Si un depósito de 1 m de altura cae en caida libre, ?`cuál es la presión en el fondo del mismo?
+
+\subsection{Rotación como sólido rígido}
+
+Supongamos ahora un recipiente cilíndrico, de radio $R$, con un fluido hasta una altyua $h$, que gira con velocidad angular $\vec \Omega = \Omega \vec k$ constante. Al cabo de un cierto tiempo, todo el fluido se moverá como un sólido rígido.
+
+\begin{center}
+	\includegraphics[width=0.7\columnwidth]{TeX_files/chapter02-Hidrostatica/ac_centripeta}
+	% ac_centripeta.png: 400x249 pixel, 72dpi, 14.11x8.78 cm, bb=
+\end{center}
+
+Usando la ecuación \ref{ec:SR}, con $\deriv{\vec v_0}{t} = \deriv{\vec \Omega}{t} \times \vec r_0 =0$, tenemos tan sólo la aceleración centrípeta
+\begin{equation}
+	\vec \Omega \times \left( \vec \Omega \times \vec r_0\right) = -r\Omega^2 \vec e_r
+\end{equation} 
+
+
+Ahora hay que recordar cómo es el gradiente en coordenadas cilíndricas,
+\begin{equation}
+	\vec \nabla p = \dparc{p}{r} \vec e_r + \frac{1}{r}\dparc{p}{\theta}\vec e_\theta + \dparc{p}{z}\vec k,
+\end{equation} 
+de forma que la ecuación \ref{ec:principal} queda como
+\begin{eqnarray}
+	\dparc{p}{r} &=& \rho r\Omega^2 \\
+	\dparc{p}{z} &=& -\rho g
+\end{eqnarray} 
+
+Actuando de la misma forma que con aceleración lineal, llegamos a la expresión
+\begin{equation}
+	p = \frac{1}{2}\rho \Omega^2 r^2 - \rho g z + C 
+\end{equation} 
+
+
+El valor de $C$ no es ni más ni menos que el valor de la presión en el origen de coordenadas, $p_0$.
+\begin{equation}
+	p = \frac{1}{2}\rho \Omega^2 r^2 - \rho g z + p_0 
+	\label{ec:rot1}
+\end{equation} 
+
+La superficie libre se encuentra, como en el caso de la aceleración lineal, mediante conservación del volumen total del fluido (suponiendo, claro, que no se derrame). 
+
+Sea $h_0$ la altura de la superficie libre en $(x,z)=(0,0)$. La presión en este punto es entonces $p_0=p_a + \rho g h_0$, donde $p_a$ es la presión ambiente en el exterior del líquido. La ecuación \ref{ec:rot1} queda entonces como 
+\begin{equation}
+	p = \frac{1}{2}\rho \Omega^2 r^2 - \rho g z + p_a + \rho g h_0
+	\label{ec:rot2}
+\end{equation} 
+y la forma de la superficie libre, $z=z_s$, viene dada por los puntos en los que $p=p_a$. Es decir,
+\begin{equation}
+	\frac{1}{2}\rho \Omega^2 r^2 - \rho g z_s + \rho g h_0 = 0
+\end{equation} 
+\begin{equation}
+	\Rightarrow  z_s = h_0 + \frac{1}{2}\frac{\Omega^2 r^2}{g} 
+\end{equation} 
+
+Para calcular $h_0$, consideramos que el volumen se conserva,
+
+\begin{minipage}{0.5\columnwidth}
+	\begin{center}
+		\includegraphics[width=\columnwidth]{TeX_files/chapter02-Hidrostatica/rotando}
+		% rotando.png: 354x298 pixel, 80dpi, 11.24x9.46 cm, bb=0 0 319 268
+	\end{center}
+\end{minipage}
+\begin{minipage}{0.5\columnwidth}
+	\[
+	\pi R^2 h = \int_0^R 2\pi r z_s \dif r =
+	\]
+	\[
+	= \int_0^R 2\pi r\left(h_0 + \frac{1}{2}\rho\frac{\Omega^2r^2}{g}\right) \dif r =
+	\]
+	\[
+	= \pi\left[R^2 h_0 + \frac{1}{4}\frac{\Omega^2 R^4}{g} \right]
+	\]
+	\[
+	\Rightarrow \quad h_0 = h-\frac{1}{4}\frac{\Omega^2 R^2}{g}
+	\]
+	\[
+	\Rightarrow z_s(r) = h-\frac{1}{4}\frac{\Omega^2 R^2}{g} + \frac{1}{2}\frac{\Omega^2 r^2}{g}
+	\]
+	
+\end{minipage}
