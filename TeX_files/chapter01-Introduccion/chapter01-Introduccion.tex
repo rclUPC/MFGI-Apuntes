@@ -156,6 +156,65 @@ Batchelor \cite{Batchelor1997} lo describe muy bien con una figura parecida a es
 		
 		Ampliaremos el concepto de viscosidad en el tema siguiente.
 		
+		\subsection{Ejemplo}
+		
+		Conocemos el típico problema del bloque que desciende por un plano inclinado 
+		dada una cierta fuerza de fricción. Ahora vamos a considerar que la fuerza de 
+		fricción viene generada por una película, de espesor $e$, de un fluido de 
+		viscosidad $\mu$.
+		
+		\begin{center}
+			\includegraphics{TeX_files/chapter01-Introduccion/planoInclinado.pdf}
+		\end{center}
+		
+		Si suponemos que el perfil de velocidades es lineal, entre 0 en el plano y $U$ en el bloque, el esfuerzo que realiza el fluido sobre el bloque es
+		$$
+		\tau = \mu \deriv{u}{y} \approx \mu \frac{U}{e}
+		$$
+		y la fuerza de fricción és entonces
+		$$
+		F_f = \tau S = \mu \frac{U}{e}S
+		$$
+		
+		El equilibrio de fuerzas es entre la componente tangencial del peso y 
+		esta fuerza de fricción. Pero como se puede observar, la fuerza de fricción no
+		és constane, sino que és proporcional a la velocidad. A medida que el cuerpo
+		se acelera, la fuerza de fricción también aumenta, y llegará un momento
+		(matemáticamente hablando, en el límite de tiempo infinito)
+		en que se equilibraran y el cuerpo dejará de acelerarse.
+		
+		$$
+		W\sin{\theta} - F_f = M a = M \deriv{U}{t}
+		$$
+		$$
+		M g \sin{\theta} - \mu \frac{U}{e}S = M \deriv{U}{t}
+		$$
+		que se puede reescribir como una EDO de variables separables de la forma
+		$$
+		\deriv{U}{t} = g\sin{\theta} - \frac{\mu S}{eM} U
+		$$
+		Si,  para simplificar un poco, definimos un tiempo característico 
+		$$
+		\varepsilon = \frac{eM}{\mu S}
+		$$
+		(como ejercicio sencillo, comprueba que $\varepsilon$ tiene unidades de tiempo)
+		la ecuación anterior se puede escribir como
+		$$
+		\frac{\dif U}{\varepsilon g\sin{\theta}-U} = \frac{\dif t}{\varepsilon}
+		$$
+		cuya solución es
+		$$
+		U(t) = \varepsilon g\sin{\theta}\left(1-e^{-\frac{t}{\varepsilon}}\right)
+		$$
+		Efectivamente, para $t=0$, $U=0$ y, para $ t \rightarrow \infty $, 
+		$U$ tiende a la velocidad límite, $U \rightarrow \varepsilon g\sin{\theta}$
+		
+		La velocidad con la que se alcanza esta velocidad límite depende de $\varepsilon$
+		y, por tanto, de la relación entre viscosidad, masa, espesor y superficie de 
+		contacto.
+		
+		Nótese que esta velocidad límite se podría haber obtenido de forma algebraica
+		simple haciendo que la aceleración fuese cero, $\deriv{U}{t} = 0$.
 	\end{itemize}
 	\item {\textbf{Propiedades termodin\'amicas}}
 	

@@ -1,0 +1,47 @@
+﻿\begin{tikzpicture}
+\newcommand{\ang}{30}
+% triangle:
+\draw [draw = gray, fill = gray!15] (0,0) coordinate (O) -- (\ang:12)
+    coordinate [pos=.45] (M) |- coordinate (B) (O);
+% angles:
+\draw [draw = gray] (O) ++(.8,0) arc (0:\ang:0.8) 
+    node [pos=.4, left] {$\theta$};
+\draw [draw = gray] (B) rectangle ++(-0.3,0.3);
+
+\begin{scope}[-latex,rotate=\ang]
+% oil film
+\draw [fill = green!30, draw=none] rectangle ++ (12,0.2);
+
+\draw (3,-0.2) --(3,0);
+\draw (3,0.6) --(3,0.2)
+	node [very near start,right] {$e$};
+
+%Axes
+\draw (10,0)--(10,1) node[very near end,right]{$y$};
+\draw (10,0)--(9,0) node[very near end,below]{$x$};
+
+% Object (rectangle)
+\draw [fill = black!30,
+    draw = black!50] (M) ++(0,0.2) rectangle ++ (2,1.2);
+ 
+% Weight Force and its projections
+\draw [dashed] (M)  ++(0,0.2) ++ (1,0.6) coordinate (MM) -- ++ (0,-2.6)
+    node [very near end, right] {$W\cos{\theta}$};
+ 
+\draw [dashed] (MM) -- ++ (-1.5,0) 
+    node [very near end, left] {$W\sin{\theta}$};
+ 
+\draw (MM) -- ++ (-\ang-90:3)
+    node [very near end,below left ] {$W$};
+ 
+ 
+% Frictional Force
+\draw (MM) -- ++ (0.75,0)
+    node [very near end, above] {$F_f$};
+
+\draw [-] (M)++(1.2,0.2) node [above] {$S$};
+
+\draw (M) ++(1,1.7) -- ++(-1.2,0) node [midway,above] {$\mathbf{U}$}; 
+\end{scope}
+
+\end{tikzpicture}
