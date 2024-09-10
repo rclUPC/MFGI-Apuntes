@@ -1,3 +1,6 @@
+% Este dibujo esta basado en el tutorial encontrado en 
+% https://latexdraw.com/free-body-diagram-of-an-inclined-plane-in-tikz/?utm_content=cmp-true
+
 ﻿\begin{tikzpicture}
 \newcommand{\ang}{30}
 % triangle:
